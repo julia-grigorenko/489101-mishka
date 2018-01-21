@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy:Интернет-магазин Мишка - вязание на заказ. Каталог товаров.</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a href="#" class="page-header__logo">
+        <img class="page-header__logo-image" src="http://placehold.it/86x35">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="#">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <div class="main-nav__search search-block">
+              <a class="search-block__link" href="#">Поиск по сайту</a>
+              <form class="search-block__form form" action="https://echo.htmlacademy.ru" method="post">
+                <label class="form__field-text" aria-label="Поиск по сайту">
+                  <input class="form__input" type="search" name="search" placeholder="Поиск по сайту">
+                </label>
+              </form>
+          </div>
+          <div class="main-nav__cart cart-block">
+              <a class="cart-block__link" href="#">Корзина: пока пуста</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="page-catalog">
+      <h1 class="page-main__title">Каталог товаров интернет-магазина Мишка - вязание на заказ.Милые штуки ручной работы для дома</h1>
+      <section class="page-catalog__catalog catalog">
+        <h2 class="visually-hidden">Каталог товаров интернет-магазина Мишка</h2>
+        <article class="catalog__item">
+            <div class="сatalog__item-content">
+                <img class="catalog__img" src="http://placehold.it/263x198" width="" height="" alt="">
+                <div class="catalog__item-description">
+                    <p class="catalog__item-name">Зайчик-попрыгайчик</p>
+                    <span class="catalog__item-params">Рост 30 см, вес 200г</span>
+                </div>
+                <div class="catalog__footer">
+                  <span class="catalog__price">1 200 руб.</span>
+                  <a class="btn catalog__btn" href="#">Купить</a>
+                </div>
+            </div>
+        </article>
+        <article class="catalog__item">
+            <div class="сatalog__item-content">
+                <img class="catalog__img" src="http://placehold.it/263x198" width="" height="" alt="">
+                <div class="catalog__item-description">
+                    <p class="catalog__item-name">Корзинка для белья</p>
+                    <span class="catalog__item-params">Диаметр 15 см, высота 10 см</span>
+                </div>
+                <div class="catalog__footer">
+                  <span class="catalog__price">690 руб.</span>
+                  <a class="btn catalog__btn" href="#">Купить</a>
+                </div>
+            </div>
+        </article>
+        <article class="catalog__item">
+            <div class="сatalog__item-content">
+                <img class="catalog__img" src="http://placehold.it/263x198" width="" height="" alt="">
+                <div class="catalog__item-description">
+                    <p class="catalog__item-name">Большая корзинка для игрушек</p>
+                    <span class="catalog__item-params">Диаметр 30 см, высота 30 см</span>
+                </div>
+                <div class="catalog__footer">
+                  <span class="catalog__price">1 500 руб.</span>
+                  <a class="btn catalog__btn" href="#">Купить</a>
+                </div>
+            </div>
+        </article>
+      </section>
+      <section class="page-catalog__video video-block">
+        <h2 class="visually-hidden">Видео, посвященное процессу производства товаров интернет-магазина Мишка</h2>
+        <p class="video-block__title">Процесс производства</p>
+        <div class="video-block__video"></div>
+        <p class="video-block__text">
+            По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+        </p>
+        <a class="video-block__btn" href="form.html">Сделать заказ</a>
+      </section>
+    </main>
+    <footer>
+      <section class="social">
+        <h2 class="visually-hidden">Социальные аккаунты интернет-магазина Мишка: вязание на заказ. Милые штуки ручной работы для дома.</h2>
+        <ul class="social__list">
+          <li class="social__item"><a href="https://www.instagram.com/htmlacademy" class="social__link social__link--instagram">Мы в Инстаграме</a></li>
+          <li class="social__item"><a href="https://www.facebook.com/htmlacademy" class="social__link social__link--facebook">Мы в Фейсбуке</a></li>
+          <li class="social__item"><a href="#" class="social__link social__link--twitter">Мы в Твиттере</a></li>
+        </ul>
+      </section>
+      <section class="copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="#">htmlacademy <img class="copyright__img" src="http://placehold.it/27x34" alt=""></a>
+      </section>
+    </footer>
+    <div class="modal-overlay visually-hidden">
+      <div class="modal">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="modal__form-group form-group">
+              <legend class="form-group__title">Выберите размер:</legend>
+              <div class="form-group__content field-radio__list">
+                  <label class="field-radio__item">
+                      <input class="field-radio__input visually-hidden" type="radio" name="s" value="s" checked>
+                      <span class="field-radio__text">s</span>
+                  </label>
+                  <label class="field-radio__item">
+                      <input class="field-radio__input visually-hidden" type="radio" name="m" value="m">
+                      <span class="field-radio__text">m</span>
+                  </label>
+                  <label class="field-radio__item">
+                      <input class="field-radio__input visually-hidden" type="radio" name="l" value="l">
+                      <span class="field-radio__text">l</span>
+                  </label>
+              </div>
+          </fieldset>
+          <button class="modal__btn" type="submit">Добавить</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
