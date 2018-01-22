@@ -14,20 +14,15 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="catalog.html">Каталог товаров</a>
+              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Вязание на заказ</a>
+              <a class="site-list__link" href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Поиск по сайту</a>
             </li>
           </ul>
-          <div class="main-nav__search search-block">
-              <a class="search-block__link" href="#">Поиск по сайту</a>
-              <form class="search-block__form form" action="https://echo.htmlacademy.ru" method="post">
-                <label class="form__field-text" aria-label="Поиск по сайту">
-                  <input class="form__input" type="search" name="search" placeholder="Поиск по сайту">
-                </label>
-              </form>
-          </div>
           <div class="main-nav__cart cart-block">
               <a class="cart-block__link" href="#">Корзина: пока пуста</a>
           </div>
@@ -51,8 +46,7 @@
       </section>
       <section class="promo">
         <div class="promo__wrapper">
-          <h2 class="visually-hidden">Промо-акция интернет-магазина Мишка - товар недели.</h2>
-          <div class="promo__title">Вязаные корзинки</div>
+          <h2 class="promo__title">Вязаные корзинки</h2>
           <span class="promo__name">Товар недели</span>
           <p class="promo__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
           <table class="promo__params">
@@ -71,7 +65,7 @@
           </table>
           <img class="promo__img" src="http://placehold.it/260x315" alt="">
           <p class="promo__price">Цена: 990 руб.</p>
-          <button class="promo__btn">Заказать</button>
+          <a class="promo__btn">Заказать</a>
         </div>
       </section>
       <section class="advantages">
@@ -98,10 +92,10 @@
               как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
               и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
               <cite class="reviews__author-name">Анастасия Красильникова</cite>
-              <span class="reviews__account">@missssssiskras</span>
+              <a class="reviews__account">@missssssiskras</a>
             </blockquote>
-            <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-            <button class="reviews__next" type="button">Следующий отзыв</button>
+            <button class="reviews__btn reviews__btn--prev" type="button">Предыдущий отзыв</button>
+            <button class="reviews__btn reviews__btn--next" type="button">Следующий отзыв</button>
             <a class="reviews__write button" href="#">Написать</a>
           </div>
         </div>
@@ -111,7 +105,7 @@
         <p class="feedback__title">Контакты</p>
         <div class="contacts__email">
           <span class="email__title">e-mail:</span>
-          <span class="email__name">info@mimimishkashop.ru</span>
+          <a class="email__name">info@mimimishkashop.ru</a>
         </div>
         <div class="contacts__address">
           <span class="address__title">адрес:</span>
@@ -120,7 +114,7 @@
         <div class="contacts__map">
           <img class="map__img" src="http://placehold.it/320x460" alt="" >
         </div>
-        <button class="contacts__btn">Напишите нам</button>
+        <a class="contacts__btn">Напишите нам</a>
       </section>
     </main>
     <footer>
