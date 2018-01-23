@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Форма заказа товаров интернет-магазина Мишка - вязание на заказ.</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a href="index.html" class="page-header__logo">
+        <img class="page-header__logo-image" src="http://placehold.it/86x35">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Поиск по сайту</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="page-main__title">Вязание на заказ</h1>
+      <section class="order">
+        <h2 class="visually-hidden">Форма заказа товаров интернет-магазина Мишка</h2>
+        <p class="order__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form class="order__form form" action="https://echo/htmlacademy.ru" method="post">
+          <fieldset class="form__group">
+              <legend class="form__group-title">Тип</legend>
+              <div class="form__group-content">
+                  <label class="form__radio-item">
+                      <input class="form__radio-input visually-hidden" type="radio" name="order-category" value="accessory" checked>
+                      <span class="form__radio-text">Аксессуар для интерьера</span>
+                  </label>
+                  <label class="form__radio-item">
+                      <input class="form__radio-input visually-hidden" type="radio" name="order-category" value="toy">
+                      <span class="form__radio-text">Детская игрушка</span>
+                  </label>
+              </div>
+          </fieldset>
+          <fieldset class="form__group">
+              <legend class="form__group-title">Цвет</legend>
+              <div class="form__group-content">
+                  <label class="form__checkbox-item">
+                      <input class="form__checkbox-input visually-hidden" type="checkbox" name="white" checked>
+                      <span class="form__checkbox-text">Белый</span>
+                  </label>
+                  <label class="form__checkbox-item">
+                      <input class="form__checkbox-input visually-hidden" type="checkbox" name="grey" checked>
+                      <span class="form__checkbox-text">Серый</span>
+                  </label>
+                  <label class="form__checkbox-item">
+                      <input class="form__checkbox-input visually-hidden" type="checkbox" name="tiffany">
+                      <span class="form__checkbox-text">«Тиффани»</span>
+                  </label>
+                  <label class="form__checkbox-item">
+                      <input class="form__checkbox-input visually-hidden" type="checkbox" name="black">
+                      <span class="form__checkbox-text">Черный</span>
+                  </label>
+                  <label class="form__checkbox-item">
+                      <input class="form__checkbox-input visually-hidden" type="checkbox" name="pink">
+                      <span class="form__checkbox-text">Розовый</span>
+                  </label>
+                  <label class="form__checkbox-item">
+                      <input class="form__checkbox-input visually-hidden" type="checkbox" name="orange">
+                      <span class="form__checkbox-text">Оранжевый</span>
+                  </label>
+              </div>
+          </fieldset>
+          <fieldset class="form__group">
+            <legend class="form__group-title">фио</legend>
+            <div class="form__group-content">
+              <label class="form__item">
+                <span class="form__text">Имя:</span>
+                <input class="form__input" type="text" name="order-name" placeholder="Введите ваше имя*" required>
+              </label>
+              <label class="form__item">
+                <span class="form__text">Фамилия:</span>
+                <input class="form__input" type="text" name="order-surname" placeholder="Укажите фамилию*" required>
+              </label>
+              <label class="form__item">
+                <span class="form__text">Отчество:</span>
+                <input class="form__input" type="text" name="order-patronymic" placeholder="Отчество, если желаете">
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="form__group">
+            <legend class="form__group-title">тел</legend>
+            <div class="form__group-content">
+              <label class="form__item">
+                <input class="form__input" type="tel" name="order-tel" placeholder="+7 ХХХ ХХ ХХ*" required>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="form__group">
+            <legend class="form__group-title">e-mail</legend>
+            <div class="form__group-content">
+              <label class="form__item">
+                <input class="form__input" type="email" name="order-email" placeholder="Ваш Email*" required>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="form__group">
+            <legend class="form__group-title">доп</legend>
+            <div class="form__group-content">
+              <label class="form__item">
+                <textarea class="form__textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              </label>
+            </div>
+          </fieldset>
+          <p class="form__note"><sup class="form__sup">*</sup>Поля обязательны для заполнения</p>
+          <button class="btn order__btn" type="submit">Отправить заказ</button>
+      </form>
+      </section>
+    </main>
+    <footer>
+      <section class="social">
+        <h2 class="visually-hidden">Социальные аккаунты интернет-магазина Мишка: вязание на заказ. Милые штуки ручной работы для дома.</h2>
+        <ul class="social__list">
+          <li class="social__item"><a href="https://www.instagram.com/htmlacademy" class="social__link social__link--instagram">Мы в Инстаграме</a></li>
+          <li class="social__item"><a href="https://www.facebook.com/htmlacademy" class="social__link social__link--facebook">Мы в Фейсбуке</a></li>
+          <li class="social__item"><a href="#" class="social__link social__link--twitter">Мы в Твиттере</a></li>
+        </ul>
+      </section>
+      <section class="copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="#">htmlacademy <img class="copyright__img" src="http://placehold.it/27x34" alt=""></a>
+      </section>
+    </footer>
+  </body>
+</html>

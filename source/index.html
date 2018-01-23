@@ -2,11 +2,160 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
+    <title>HTML Academy: Интернет-магазин Мишка - вязание на заказ.</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
-
+    <header class="page-header">
+      <a href="#" class="page-header__logo">
+        <img class="page-header__logo-image" src="http://placehold.it/86x35">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Поиск по сайту</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="page-main__title">Интернет-магазин Мишка - вязание на заказ.Милые штуки ручной работы для дома</h1>
+      <section class="category">
+        <div class="category__header">
+          <h2 class="category__header-text">Милые штуки ручной работы для дома</h2>
+        </div>
+        <ul class="category-list">
+          <li class="category-list__item">
+            <a href="#" class="category-list__link">Предметы интерьера</a>
+          </li>
+          <li class="category-list__item">
+            <a href="#" class="category-list__link">Детские игрушки</a>
+          </li>
+        </ul>
+      </section>
+      <section class="promo">
+        <div class="promo__wrapper">
+          <h2 class="visually-hidden">Промо-акция интернет-магазина Мишка - товар недели.</h2>
+          <span class="promo__title">Вязаные корзинки</span>
+          <span class="promo__name">Товар недели</span>
+          <p class="promo__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+          <table class="promo__params">
+            <tr class="params__item">
+              <td class="item__name">Цвет:</td>
+              <td class="item__value">«Тиффани»/серый</td>
+            </tr>
+            <tr class="params__item">
+              <td class="item__name">Диаметр:</td>
+              <td class="item-feature__value">25 см</td>
+            </tr>
+            <tr class="params__item">
+              <td class="item__name">Высота:</td>
+              <td class="item__value">15 см</td>
+            </tr>
+          </table>
+          <img class="promo__img" src="http://placehold.it/260x315" alt="">
+          <p class="promo__price">Цена: 990 руб.</p>
+          <a class="promo__btn" href="#">Заказать</a>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="advantages__wrapper">
+          <h2 class="visually-hidden">Коротко об основных преимуществах интернет-магазина Мишка: вязание на заказ. Милые штуки ручной работы для дома.</h2>
+          <p class="advantages__title">Коротко о нас:</p>
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--eco">Экологически чистые материалы</li>
+            <li class="advantages__item advantages__item--profit">Скандинавский стиль по российской цене</li>
+            <li class="advantages__item advantages__item--likes">Увеличивает лайки на фотографиях</li>
+            <li class="advantages__item advantages__item--handmade">Связано вручную и с умилением</li>
+            <li class="advantages__item advantages__item--domestic">Поддержи отечественного производителя</li>
+            <li class="advantages__item advantages__item--pack">Поставляется в подарочной упаковке</li>
+          </ul>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="reviews__wrapper slider">
+          <h2 class="visually-hidden">Отзывы покупателей интернет-магазина Мишка: вязание на заказ. Милые штуки ручной работы для дома.</h2>
+          <p class="reviews__title">Отзывы</p>
+          <div class="reviews__list slider__list">
+            <blockquote class="reviews__item">
+              <p class="reviews__text">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков,
+              как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+              и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+              <cite class="reviews__author-name">Анастасия Красильникова</cite>
+              <a class="reviews__account" href="#">@missssssiskras</a>
+            </blockquote>
+            <button class="reviews__btn reviews__btn--prev" type="button">Предыдущий отзыв</button>
+            <button class="reviews__btn reviews__btn--next" type="button">Следующий отзыв</button>
+            <a class="reviews__write button" href="#">Написать</a>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты интернет-магазина Мишка: вязание на заказ. Милые штуки ручной работы для дома.</h2>
+        <p class="feedback__title">Контакты</p>
+        <div class="contacts__email">
+          <span class="email__title">e-mail:</span>
+          <a class="email__name" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+        </div>
+        <div class="contacts__address">
+          <span class="address__title">адрес:</span>
+          <span class="address__name">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+        </div>
+        <div class="contacts__map">
+          <img class="map__img" src="http://placehold.it/320x460" alt="" >
+        </div>
+        <a class="contacts__btn" href="#">Напишите нам</a>
+      </section>
+    </main>
+    <footer>
+      <section class="social">
+        <h2 class="visually-hidden">Социальные аккаунты интернет-магазина Мишка: вязание на заказ. Милые штуки ручной работы для дома.</h2>
+        <ul class="social__list">
+          <li class="social__item"><a href="https://www.instagram.com/htmlacademy" class="social__link social__link--instagram">Мы в Инстаграме</a></li>
+          <li class="social__item"><a href="https://www.facebook.com/htmlacademy" class="social__link social__link--facebook">Мы в Фейсбуке</a></li>
+          <li class="social__item"><a href="#" class="social__link social__link--twitter">Мы в Твиттере</a></li>
+        </ul>
+      </section>
+      <section class="copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="#">htmlacademy <img class="copyright__img" src="http://placehold.it/27x34" alt=""></a>
+      </section>
+    </footer>
+    <div class="modal-overlay visually-hidden">
+      <div class="modal">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="modal__form-group form-group">
+              <legend class="form-group__title">Выберите размер:</legend>
+              <div class="form-group__content field-radio__list">
+                  <label class="field-radio__item">
+                      <input class="field-radio__input visually-hidden" type="radio" name="s" value="s" checked>
+                      <span class="field-radio__text">s</span>
+                  </label>
+                  <label class="field-radio__item">
+                      <input class="field-radio__input visually-hidden" type="radio" name="m" value="m">
+                      <span class="field-radio__text">m</span>
+                  </label>
+                  <label class="field-radio__item">
+                      <input class="field-radio__input visually-hidden" type="radio" name="l" value="l">
+                      <span class="field-radio__text">l</span>
+                  </label>
+              </div>
+          </fieldset>
+          <button class="modal__btn" type="submit">Добавить</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
