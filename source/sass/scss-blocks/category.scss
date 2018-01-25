@@ -1,0 +1,35 @@
+.category {
+
+}
+
+    .category__header {
+      width: 320px;
+      height: 282px;
+      background-image: url(../../img/hero-mobile@1x.jpg);
+      background-position: center top;
+      background-repeat: no-repeat;
+    }
+
+    .category__header-text {
+      font-size: 27px;
+      line-height: 30px;
+      @include font-family-bold;
+      color: $font-title-black;
+    }
+
+    .category-list {
+      @include list-reset;
+    }
+
+    .category-list__link {
+      font-size: 19px;
+      line-height: 24px;
+      @include font-family-bold;
+      color: $font-white;
+      &--light-green {
+        background: $bg-light-green;
+      }
+      &--dark-green {
+        background: $bg-dark-green;
+      }
+    }

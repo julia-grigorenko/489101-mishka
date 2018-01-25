@@ -1,0 +1,18 @@
+.contacts {
+  @include font-family-text;
+}
+
+    .contacts__title {
+      font-size: 18px;
+      line-height: 30px;
+      @include font-family-bold;
+      color: $font-black;
+    }
+
+    .contacts__email {
+
+    }
+
+    .contacts__address {
+
+    }

@@ -1,0 +1,25 @@
+.reviews {
+  @include bg-white;
+}
+
+    .reviews__title {
+      @include font-family-title;
+    }
+
+    .reviews__text {
+      @include font-family-text;
+    }
+
+    .reviews__author-name {
+      font-size: 17px;
+      line-height: 24px;
+      @include font-family-bold;
+      color: $font-black;
+    }
+
+    .reviews__account {
+      font-size: 17px;
+      line-height: 30px;
+      @include font-family;
+      color: $font-grey;
+    }

@@ -1,0 +1,8 @@
+.btn {
+  display: block;
+  font-size: 17px;
+  line-height: 20px;
+  @include font-family-bold;
+  color: $font-grey;
+  @include bg-white;
+}

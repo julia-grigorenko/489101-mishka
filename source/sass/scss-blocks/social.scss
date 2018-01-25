@@ -1,0 +1,7 @@
+.social {
+  @include bg-grey;
+}
+
+    .social__list {
+      @include list-reset;
+    }

@@ -1,0 +1,29 @@
+.form {
+
+}
+
+    .form__group-title {
+      font-size: 17px;
+      line-height: 16px;
+      @include font-family-bold;
+      color: $font-green;
+    }
+
+    .form__radio-text {
+      @include form-text;
+    }
+
+    .form__checkbox-text {
+      @include form-text;
+    }
+
+    .form__text {
+        @include form-text;
+    }
+
+    .form__note {
+      font-size: 14px;
+      line-height: 16px;
+      @include font-family;
+      color: $font-grey;
+    }
