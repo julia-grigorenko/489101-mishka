@@ -1,6 +1,5 @@
 .site-list {
   @include list-reset;
-}
 
     .site-list__link{
       font-size: 17px;
@@ -8,3 +7,4 @@
       @include font-family-bold;
       color: $font-black;
     }
+}

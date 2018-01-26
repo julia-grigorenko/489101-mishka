@@ -1,9 +1,9 @@
-.page-header {
+.page-footer {
   @include width100;
-  @include bg-white;
+  @include bg-grey;
   @include outline-red;
 
-  .page-header__wrapper {
+  .page-footer__wrapper {
     @include wrapper-wdth-mrgn-pddng;
     @include border-green;
   }

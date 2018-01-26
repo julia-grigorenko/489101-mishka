@@ -56,3 +56,26 @@
 @mixin bg-green {
   background-color: $bg-light-green;
 }
+
+@mixin border-green {
+  outline: 1px solid #77f53a;
+}
+
+@mixin outline-red {
+  outline: 1px solid #c3302c;
+}
+
+@mixin width100 {
+  width: 100%;
+}
+
+@mixin wrapper-wdth-mrgn {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@mixin wrapper-wdth-mrgn-pddng {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+}

@@ -1,14 +1,29 @@
-order {
+.order {
+  @include width100;
+  @include bg-white;
+  @include outline-red;
 
+  .order__wrapper {
+    @include wrapper-wdth-mrgn-pddng;
+    @include border-green;
+  }
+
+  .order__title-wrapper {
+    @include width100;
+    @include bg-grey;
+    @include outline-red;
+  }
+
+  .order__title {
+    @include wrapper-wdth-mrgn-pddng;
+    @include font-family-page-title;
+    @include border-green;
+  }
+
+  .order__description {
+    font-size: 13px;
+    line-height: 24px;
+    @include font-family;
+    color: $font-grey;
+  }
 }
-
-    .order__title {
-      @include font-family-page-title;
-    }
-
-    .order__description {
-      font-size: 13px;
-      line-height: 24px;
-      @include font-family;
-      color: $font-grey;
-    }

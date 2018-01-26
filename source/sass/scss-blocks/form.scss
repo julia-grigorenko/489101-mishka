@@ -1,7 +1,5 @@
 .form {
 
-}
-
     .form__group-title {
       font-size: 17px;
       line-height: 16px;
@@ -27,3 +25,4 @@
       @include font-family;
       color: $font-grey;
     }
+}

@@ -1,18 +1,23 @@
 .contacts {
   @include font-family-text;
+  @include width100;
+  @include outline-red;
+
+  .contacts__wrapper {
+    @include wrapper-wdth-mrgn;
+    @include border-green;
+  }
+
+  .contacts__title {
+    font-size: 18px;
+    line-height: 30px;
+    @include font-family-bold;
+    color: $font-black;
+  }
+
+  .contacts__email {
+  }
+
+  .contacts__address {
+  }
 }
-
-    .contacts__title {
-      font-size: 18px;
-      line-height: 30px;
-      @include font-family-bold;
-      color: $font-black;
-    }
-
-    .contacts__email {
-
-    }
-
-    .contacts__address {
-
-    }

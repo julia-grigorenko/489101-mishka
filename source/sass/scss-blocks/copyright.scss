@@ -1,10 +1,9 @@
 .copyright {
-  @include bg-grey;
-}
 
-    .copyright__text {
-      font-size: 19px;
-      line-height: 18px;
-      @include font-family-bold;
-      color: $font-black;
-    }
+  .copyright__text {
+    font-size: 19px;
+    line-height: 18px;
+    @include font-family-bold;
+    color: $font-black;
+  }
+}
