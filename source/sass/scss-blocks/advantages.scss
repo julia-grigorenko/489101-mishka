@@ -1,0 +1,25 @@
+.advantages {
+  @include width100;
+  @include bg-white;
+  @include outline-red;
+
+  .advantages__wrapper {
+    @include wrapper-wdth-mrgn-pddng;
+    @include border-green;
+  }
+
+  .advantages__title {
+    @include font-family-title;
+  }
+
+  .advantages__list {
+    @include list-reset;
+  }
+
+  .advantages__item {
+    font-size: 17px;
+    line-height: 20px;
+    @include font-family-bold;
+    color: $font-black;
+  }
+}

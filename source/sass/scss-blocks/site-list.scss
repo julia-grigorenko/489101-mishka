@@ -1,0 +1,10 @@
+.site-list {
+  @include list-reset;
+
+    .site-list__link{
+      font-size: 17px;
+      line-height: 24px;
+      @include font-family-bold;
+      color: $font-black;
+    }
+}

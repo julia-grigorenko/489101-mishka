@@ -3,46 +3,53 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Интернет-магазин Мишка - вязание на заказ.</title>
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <header class="page-header">
-      <a href="#" class="page-header__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/86x35">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Вязание на заказ</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">Поиск по сайту</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="http://placehold.it/86x35">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="form.html">Вязание на заказ</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="#">Поиск по сайту</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="#">Корзина: пока пуста</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="page-main">
-      <h1 class="page-main__title">Интернет-магазин Мишка - вязание на заказ.Милые штуки ручной работы для дома</h1>
+      <h1 class="visually-hidden">Интернет-магазин Мишка - вязание на заказ.Милые штуки ручной работы для дома</h1>
       <section class="category">
-        <div class="category__header">
-          <h2 class="category__header-text">Милые штуки ручной работы для дома</h2>
+        <div class="category__wrapper">
+          <div class="category__header">
+            <h2 class="category__header-text">Милые штуки ручной работы для дома</h2>
+          </div>
         </div>
-        <ul class="category-list">
-          <li class="category-list__item">
-            <a href="#" class="category-list__link">Предметы интерьера</a>
-          </li>
-          <li class="category-list__item">
-            <a href="#" class="category-list__link">Детские игрушки</a>
-          </li>
-        </ul>
+          <ul class="category-list">
+            <li class="category-list__item category-list__item--light-green">
+              <a href="#" class="category-list__link">Предметы интерьера</a>
+            </li>
+            <li class="category-list__item category-list__item--dark-green">
+              <a href="#" class="category-list__link">Детские игрушки</a>
+            </li>
+          </ul>
+
       </section>
       <section class="promo">
         <div class="promo__wrapper">
@@ -57,7 +64,7 @@
             </tr>
             <tr class="params__item">
               <td class="item__name">Диаметр:</td>
-              <td class="item-feature__value">25 см</td>
+              <td class="item__value">25 см</td>
             </tr>
             <tr class="params__item">
               <td class="item__name">Высота:</td>
@@ -66,7 +73,7 @@
           </table>
           <img class="promo__img" src="http://placehold.it/260x315" alt="">
           <p class="promo__price">Цена: 990 руб.</p>
-          <a class="promo__btn" href="#">Заказать</a>
+          <a class="btn promo__btn" href="#">Заказать</a>
         </div>
       </section>
       <section class="advantages">
@@ -97,48 +104,53 @@
             </blockquote>
             <button class="reviews__btn reviews__btn--prev" type="button">Предыдущий отзыв</button>
             <button class="reviews__btn reviews__btn--next" type="button">Следующий отзыв</button>
-            <a class="reviews__write button" href="#">Написать</a>
+            <a class="btn reviews__write" href="#">Написать</a>
           </div>
         </div>
       </section>
       <section class="contacts">
-        <h2 class="visually-hidden">Контакты интернет-магазина Мишка: вязание на заказ. Милые штуки ручной работы для дома.</h2>
-        <p class="feedback__title">Контакты</p>
-        <div class="contacts__email">
-          <span class="email__title">e-mail:</span>
-          <a class="email__name" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+        <div class="contacts__wrapper">
+          <h2 class="visually-hidden">Контакты интернет-магазина Мишка: вязание на заказ. Милые штуки ручной работы для дома.</h2>
+          <p class="contacts__title">Контакты</p>
+          <div class="contacts__email email">
+            <span class="email__title">e-mail:</span>
+            <a class="email__name" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          </div>
+          <div class="contacts__address address">
+            <span class="address__title">адрес:</span>
+            <span class="address__name">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+          </div>
+          <div class="contacts__map map">
+            <!-- <img class="map__img" src="http://placehold.it/320x460" alt="" > -->
+          </div>
+          <a class="btn contacts__btn" href="#">Напишите нам</a>
         </div>
-        <div class="contacts__address">
-          <span class="address__title">адрес:</span>
-          <span class="address__name">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
-        </div>
-        <div class="contacts__map">
-          <img class="map__img" src="http://placehold.it/320x460" alt="" >
-        </div>
-        <a class="contacts__btn" href="#">Напишите нам</a>
       </section>
     </main>
-    <footer>
-      <section class="social">
-        <h2 class="visually-hidden">Социальные аккаунты интернет-магазина Мишка: вязание на заказ. Милые штуки ручной работы для дома.</h2>
-        <ul class="social__list">
-          <li class="social__item"><a href="https://www.instagram.com/htmlacademy" class="social__link social__link--instagram">Мы в Инстаграме</a></li>
-          <li class="social__item"><a href="https://www.facebook.com/htmlacademy" class="social__link social__link--facebook">Мы в Фейсбуке</a></li>
-          <li class="social__item"><a href="#" class="social__link social__link--twitter">Мы в Твиттере</a></li>
-        </ul>
-      </section>
-      <section class="copyright">
-        <p class="copyright__text">Разработано</p>
-        <a class="copyright__link" href="#">htmlacademy <img class="copyright__img" src="http://placehold.it/27x34" alt=""></a>
-      </section>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <section class="social">
+          <h2 class="visually-hidden">Социальные аккаунты интернет-магазина Мишка: вязание на заказ. Милые штуки ручной работы для дома.</h2>
+          <ul class="social__list">
+            <li class="social__item"><a href="https://www.instagram.com/htmlacademy" class="social__link social__link--instagram">Мы в Инстаграме</a></li>
+            <li class="social__item"><a href="https://www.facebook.com/htmlacademy" class="social__link social__link--facebook">Мы в Фейсбуке</a></li>
+            <li class="social__item"><a href="#" class="social__link social__link--twitter">Мы в Твиттере</a></li>
+          </ul>
+        </section>
+        <section class="copyright">
+          <p class="copyright__text">Разработано</p>
+          <a class="copyright__link" href="#">htmlacademy <img class="copyright__img" src="http://placehold.it/27x34" alt=""></a>
+        </section>
+      </div>
     </footer>
     <div class="modal-overlay visually-hidden">
       <div class="modal">
-        <h2 class="modal__title">Добавить в корзину</h2>
-        <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="modal__form-group form-group">
-              <legend class="form-group__title">Выберите размер:</legend>
-              <div class="form-group__content field-radio__list">
+        <div class="modal__wrapper">
+          <h2 class="modal__title">Добавить в корзину</h2>
+          <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset class="modal__form-group form-group">
+                <legend class="form-group__title">Выберите размер:</legend>
+                <div class="form-group__content field-radio__list">
                   <label class="field-radio__item">
                       <input class="field-radio__input visually-hidden" type="radio" name="s" value="s" checked>
                       <span class="field-radio__text">s</span>
@@ -151,10 +163,11 @@
                       <input class="field-radio__input visually-hidden" type="radio" name="l" value="l">
                       <span class="field-radio__text">l</span>
                   </label>
-              </div>
-          </fieldset>
-          <button class="modal__btn" type="submit">Добавить</button>
-        </form>
+                </div>
+            </fieldset>
+            <button class="btn modal__btn" type="submit">Добавить</button>
+          </form>
+        </div>
       </div>
     </div>
   </body>

@@ -1,0 +1,10 @@
+.page-header {
+  @include width100;
+  @include bg-white;
+  @include outline-red;
+
+  .page-header__wrapper {
+    @include wrapper-wdth-mrgn-pddng;
+    @include border-green;
+  }
+}

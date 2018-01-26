@@ -1,0 +1,81 @@
+@mixin font-family {
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+@mixin font-family-bold {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: bold;
+}
+
+@mixin font-family-title {
+  font-size: 25px;
+  line-height: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: bold;
+  color: $font-black;
+}
+
+@mixin font-family-page-title {
+  font-size: 27px;
+  line-height: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: bold;
+  color: $font-black;
+  background-color: $bg-grey;
+}
+
+@mixin font-family-text {
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: $font-grey;
+}
+
+@mixin form-text {
+  font-size: 17px;
+  line-height: 18px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: bold;
+  color: $font-black;
+}
+
+@mixin list-reset {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+@mixin bg-white {
+  background-color: $bg-white;
+}
+
+@mixin bg-grey {
+  background-color: $bg-grey;
+}
+
+@mixin bg-green {
+  background-color: $bg-light-green;
+}
+
+@mixin border-green {
+  outline: 1px solid #77f53a;
+}
+
+@mixin outline-red {
+  outline: 1px solid #c3302c;
+}
+
+@mixin width100 {
+  width: 100%;
+}
+
+@mixin wrapper-wdth-mrgn {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@mixin wrapper-wdth-mrgn-pddng {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+}

@@ -1,0 +1,29 @@
+.modal {
+  @include width100;
+  @include outline-red;
+
+  .modal__wrapper {
+    @include wrapper-wdth-mrgn-pddng;
+    @include border-green;
+  }
+
+  .modal__title {
+    @include font-family-title;
+  }
+
+  .form-group__title {
+    @include font-family-text;
+  }
+
+  .field-radio__text {
+    font-size: 17px;
+    line-height: 16px;
+    @include font-family-bold;
+    color: $font-grey;
+  }
+
+  .modal__btn {
+    color: $font-white;
+    @include bg-green;
+  }
+}

@@ -1,0 +1,10 @@
+.page-footer {
+  @include width100;
+  @include bg-grey;
+  @include outline-red;
+
+  .page-footer__wrapper {
+    @include wrapper-wdth-mrgn-pddng;
+    @include border-green;
+  }
+}
