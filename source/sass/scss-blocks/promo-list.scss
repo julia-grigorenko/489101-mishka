@@ -1,0 +1,27 @@
+.promo-list {
+  display: none;
+}
+
+@media (min-width:$desktop-width) {
+  .promo-list {
+    display: flex;
+    width: 320px;
+    @include list-reset;
+    background-color: #fff;
+
+    .promo-list__item {
+      // height: 79px;
+      display: flex;
+      width: 168px;
+
+    }
+
+    .promo-list__link{
+      margin: auto;
+      font-size: 15px;
+      line-height: 24px;
+      @include font-family-bold;
+      color: $font-black;
+    }
+  }
+}

@@ -79,3 +79,25 @@
   margin: 0 auto;
   padding: 0 30px;
 }
+
+@mixin visually-hidden {
+  position:absolute;
+  padding: 0px;
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+  border: 0px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin non-hidden {
+  position:static;
+  padding: 0px;
+  margin: 0px;
+  width: auto;
+  height: auto;
+  border: 0px;
+  clip: none;
+  overflow: visible;
+}

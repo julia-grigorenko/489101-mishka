@@ -2,9 +2,62 @@
   @include width100;
   @include bg-white;
   @include outline-red;
+  background-color: yellow;
+
 
   .page-header__wrapper {
     @include wrapper-wdth-mrgn-pddng;
     @include border-green;
+    position: relative;
+    // display: flex;
+    // flex-direction: column;
+    background-color: lightgrey;
+  }
+
+  .page-header__logo {
+    height: 79px;
+    display: flex;
+    background-color: lightgreen;
+  }
+
+  .page-header__logo-image {
+    margin: auto;
+    width: 88px;
+    height: 38px;
+  }
+
+  @media (min-width:$tablet-width) {
+    .page-header__wrapper {
+      width: 668px;
+      position: relative;
+      // flex-direction: row;
+      // flex-wrap: wrap;
+    }
+
+    .page-header__logo {
+      position: absolute;
+      left:50;
+      top:20px;
+      width: 115px;
+      height: 47px;
+
+    }
+  }
+
+  @media (min-width:$desktop-width) {
+    .page-header__wrapper {
+      width: 1151px;
+    }
+
+    .page-header__logo {
+      position: absolute;
+      margin: auto;
+      left: 0;
+      right: 0;
+      // height: 37 px;
+      width: 115px;
+      height: 47px;
+      background-color: lightgreen;
+    }
   }
 }

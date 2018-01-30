@@ -7,4 +7,35 @@
     @include wrapper-wdth-mrgn-pddng;
     @include border-green;
   }
+
+  .page-footer__logo {
+    display: none;
+  }
+}
+
+@media (min-width:$tablet-width) {
+  .page-footer {
+
+    .page-footer__wrapper {
+      width: 668px;
+      @include outline-red;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .page-footer__logo {
+      display: block;
+    }
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .page-footer {
+
+    .page-footer__wrapper {
+      padding-left: 176px;
+      width: 1151px;
+      @include outline-red;
+    }
+  }
 }

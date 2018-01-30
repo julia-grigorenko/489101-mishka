@@ -22,11 +22,26 @@
               <li class="site-list__item">
                 <a class="site-list__link" href="form.html">Вязание на заказ</a>
               </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="#">Поиск по сайту</a>
+            </ul>
+            <ul class="main-nav__list user-list">
+              <li class="user-list__item user-list__item--search">
+                <a class="user-list__link user-list__link--search" href="#">Поиск по сайту</a>
               </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="#">Корзина: пока пуста</a>
+              <li class="user-list__item">
+                <a class="user-list__link" href="#">Корзина: пока пуста</a>
+              </li>
+            </ul>
+            <ul class="main-nav__list promo-list">
+              <li class="promo-list__item">
+                <a class="promo-list__link" href="#">Новые поступления</a>
+              </li>
+              <li class="promo-list__item">
+                <a class="promo-list__link" href="#">Распродажа</a>
+              </li>
+            </ul>
+            <ul class="main-nav__list delivery-list">
+              <li class="delivery-list__item">
+                <a class="delivery-list__link" href="#">Бесплатная доставка по России</a>
               </li>
             </ul>
           </div>
@@ -40,7 +55,6 @@
           <div class="category__header">
             <h2 class="category__header-text">Милые штуки ручной работы для дома</h2>
           </div>
-        </div>
           <ul class="category-list">
             <li class="category-list__item category-list__item--light-green">
               <a href="#" class="category-list__link">Предметы интерьера</a>
@@ -49,13 +63,15 @@
               <a href="#" class="category-list__link">Детские игрушки</a>
             </li>
           </ul>
-
+        </div>
       </section>
       <section class="promo">
         <div class="promo__wrapper">
           <h2 class="visually-hidden">Промо-акция интернет-магазина Мишка - товар недели.</h2>
-          <span class="promo__title">Вязаные корзинки</span>
-          <span class="promo__name">Товар недели</span>
+          <div class="promo__name-wrapper">
+            <span class="promo__title">Вязаные корзинки</span>
+            <span class="promo__name">Товар недели</span>
+          </div>
           <p class="promo__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
           <table class="promo__params">
             <tr class="params__item">
@@ -77,17 +93,19 @@
         </div>
       </section>
       <section class="advantages">
+        <h2 class="visually-hidden">Коротко об основных преимуществах интернет-магазина Мишка: вязание на заказ. Милые штуки ручной работы для дома.</h2>
         <div class="advantages__wrapper">
-          <h2 class="visually-hidden">Коротко об основных преимуществах интернет-магазина Мишка: вязание на заказ. Милые штуки ручной работы для дома.</h2>
-          <p class="advantages__title">Коротко о нас:</p>
-          <ul class="advantages__list">
-            <li class="advantages__item advantages__item--eco">Экологически чистые материалы</li>
-            <li class="advantages__item advantages__item--profit">Скандинавский стиль по российской цене</li>
-            <li class="advantages__item advantages__item--likes">Увеличивает лайки на фотографиях</li>
-            <li class="advantages__item advantages__item--handmade">Связано вручную и с умилением</li>
-            <li class="advantages__item advantages__item--domestic">Поддержи отечественного производителя</li>
-            <li class="advantages__item advantages__item--pack">Поставляется в подарочной упаковке</li>
-          </ul>
+          <div class="advantages__inner-wrapper">
+            <p class="advantages__title">Коротко о нас:</p>
+            <ul class="advantages__list">
+              <li class="advantages__item advantages__item--eco">Экологически чистые материалы</li>
+              <li class="advantages__item advantages__item--profit">Скандинавский стиль по российской цене</li>
+              <li class="advantages__item advantages__item--likes">Увеличивает лайки на фотографиях</li>
+              <li class="advantages__item advantages__item--handmade">Связано вручную и с умилением</li>
+              <li class="advantages__item advantages__item--domestic">Поддержи отечественного производителя</li>
+              <li class="advantages__item advantages__item--pack">Поставляется в подарочной упаковке</li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="reviews">
@@ -102,33 +120,49 @@
               <cite class="reviews__author-name">Анастасия Красильникова</cite>
               <a class="reviews__account" href="#">@missssssiskras</a>
             </blockquote>
-            <button class="reviews__btn reviews__btn--prev" type="button">Предыдущий отзыв</button>
-            <button class="reviews__btn reviews__btn--next" type="button">Следующий отзыв</button>
-            <a class="btn reviews__write" href="#">Написать</a>
+            <div class="reviews__control-wrapper">
+              <div class="reviews__btn-wrapper">
+                <button class="reviews__btn reviews__btn--prev" type="button">Предыдущий отзыв</button>
+                <button class="reviews__btn reviews__btn--next" type="button">Следующий отзыв</button>
+              </div>
+              <a class="btn reviews__write" href="#">Написать</a>
+            </div>
           </div>
         </div>
       </section>
       <section class="contacts">
+        <h2 class="visually-hidden">Контакты интернет-магазина Мишка: вязание на заказ. Милые штуки ручной работы для дома.</h2>
         <div class="contacts__wrapper">
-          <h2 class="visually-hidden">Контакты интернет-магазина Мишка: вязание на заказ. Милые штуки ручной работы для дома.</h2>
-          <p class="contacts__title">Контакты</p>
-          <div class="contacts__email email">
-            <span class="email__title">e-mail:</span>
-            <a class="email__name" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          <div class="contacts__title-wrapper">
+            <p class="contacts__title">Контакты</p>
+            <span class="contacts__ico-flag"></span>
           </div>
-          <div class="contacts__address address">
-            <span class="address__title">адрес:</span>
-            <span class="address__name">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+          <div class="contacts__email-address-wrapper">
+            <div class="contacts__email email">
+              <span class="email__title">e-mail:</span>
+              <a class="email__name" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            </div>
+            <div class="contacts__address address">
+              <span class="address__title">адрес:</span>
+              <span class="address__name">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+            </div>
           </div>
+        </div>
+        <div class="contacts__btn-map-wrapper">
           <div class="contacts__map map">
             <!-- <img class="map__img" src="http://placehold.it/320x460" alt="" > -->
           </div>
-          <a class="btn contacts__btn" href="#">Напишите нам</a>
+          <div class="contacts__btn-wrapper">
+            <a class="btn contacts__btn" href="#">Напишите нам</a>
+          </div>
         </div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
+        <a class="page-footer__logo">
+          <img class="page-footer__logo-image" src="http://placehold.it/86x35">
+        </a>
         <section class="social">
           <h2 class="visually-hidden">Социальные аккаунты интернет-магазина Мишка: вязание на заказ. Милые штуки ручной работы для дома.</h2>
           <ul class="social__list">

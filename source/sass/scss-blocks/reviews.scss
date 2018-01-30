@@ -2,6 +2,7 @@
   @include width100;
   @include bg-white;
   @include outline-red;
+  background-color: yellow;
 
   .reviews__wrapper {
     @include wrapper-wdth-mrgn-pddng;
@@ -24,9 +25,81 @@
   }
 
   .reviews__account {
+    display: block;
     font-size: 17px;
     line-height: 30px;
     @include font-family;
     color: $font-grey;
+  }
+}
+
+@media (min-width:$tablet-width) {
+  .reviews {
+
+
+    .reviews__wrapper {
+      position: relative;
+      width: 668px;
+      @include outline-red;
+      background-color: grey;
+    }
+
+    .reviews__title {
+
+    }
+
+    .reviews__list {
+      display: flex;
+    }
+
+    .reviews__text {
+      margin-right: -250px;
+    }
+
+    .reviews__author-name {
+
+    }
+
+    .reviews__account {
+
+    }
+
+    .reviews__control-wrapper {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-between;
+      margin-top: -50px;
+    }
+
+    .reviews__btn-wrapper {
+      display: flex;
+    }
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .reviews {
+
+
+    .reviews__wrapper {
+      padding-left: 176px;
+      width: 1151px;
+      @include outline-red;
+      background-color: grey;
+    }
+
+    .reviews__title {
+
+    }
+
+    .reviews__text {
+    }
+
+    .reviews__author-name {
+
+    }
+
+    .reviews__account {
+    }
   }
 }
