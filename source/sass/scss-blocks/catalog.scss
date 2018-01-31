@@ -2,6 +2,7 @@
   @include width100;
   @include bg-white;
   @include outline-red;
+  background-color: yellow;
 
   .catalog__wrapper {
     @include wrapper-wdth-mrgn-pddng;
@@ -18,6 +19,8 @@
     @include wrapper-wdth-mrgn-pddng;
     @include font-family-page-title;
     @include border-green;
+    padding-top: 77px;
+    padding-bottom: 77px;
   }
 
   .catalog__item-link {
@@ -39,5 +42,105 @@
     line-height: 24px;
     @include font-family-bold;
     color: $font-black;
+  }
+}
+
+@media (min-width:$tablet-width) {
+  .catalog {
+
+
+    .catalog__wrapper {
+
+      width: 668px;
+      @include outline-red;
+      background-color: grey;
+    }
+
+    .catalog__title-wrapper {
+
+    }
+
+    .catalog__title {
+      padding-top: 87px;
+      padding-bottom: 87px;
+    }
+
+    .сatalog__item-content {
+      display: flex;
+    }
+
+    .catalog__inner-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .catalog__item-link {
+      font-size: 17px;
+      line-height: 24px;
+      @include font-family-bold;
+      color: $font-black;
+    }
+
+    .catalog__item-params {
+      font-size: 13px;
+      line-height: 30px;
+      @include font-family;
+      color: $font-grey;
+    }
+
+    .catalog__price {
+      font-size: 15px;
+      line-height: 24px;
+      @include font-family-bold;
+      color: $font-black;
+    }
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .catalog {
+
+    .catalog__wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 1151px;
+      @include outline-red;
+      background-color: grey;
+    }
+
+    .catalog__title-wrapper {
+
+    }
+
+    .catalog__title {
+      padding-top: 60px;
+      padding-bottom: 111px;
+    }
+
+    .сatalog__item-content {
+      flex-direction: column;
+    }
+
+    .catalog__item-link {
+      font-size: 17px;
+      line-height: 24px;
+      @include font-family-bold;
+      color: $font-black;
+    }
+
+    .catalog__item-params {
+      font-size: 13px;
+      line-height: 30px;
+      @include font-family;
+      color: $font-grey;
+    }
+
+    .catalog__price {
+      font-size: 15px;
+      line-height: 24px;
+      @include font-family-bold;
+      color: $font-black;
+    }
   }
 }

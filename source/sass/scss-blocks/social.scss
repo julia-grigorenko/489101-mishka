@@ -2,5 +2,24 @@
 
   .social__list {
     @include list-reset;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width:$tablet-width) {
+  .social {
+
+    .social__list {
+
+    }
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .social {
+
+    .social__list {
+    }
   }
 }

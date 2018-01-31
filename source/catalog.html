@@ -9,7 +9,7 @@
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a href="index.html" class="page-header__logo">
+        <a class="page-header__logo" href="index.html">
           <img class="page-header__logo-image" src="http://placehold.it/86x35">
         </a>
         <nav class="main-nav">
@@ -22,11 +22,26 @@
               <li class="site-list__item">
                 <a class="site-list__link" href="form.html">Вязание на заказ</a>
               </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="#">Поиск по сайту</a>
+            </ul>
+            <ul class="main-nav__list user-list">
+              <li class="user-list__item user-list__item--search">
+                <a class="user-list__link user-list__link--search" href="#">Поиск по сайту</a>
               </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="#">Корзина: пока пуста</a>
+              <li class="user-list__item">
+                <a class="user-list__link" href="#">Корзина: пока пуста</a>
+              </li>
+            </ul>
+            <ul class="main-nav__list promo-list">
+              <li class="promo-list__item">
+                <a class="promo-list__link" href="#">Новые поступления</a>
+              </li>
+              <li class="promo-list__item">
+                <a class="promo-list__link" href="#">Распродажа</a>
+              </li>
+            </ul>
+            <ul class="main-nav__list delivery-list">
+              <li class="delivery-list__item">
+                <a class="delivery-list__link" href="#">Бесплатная доставка по России</a>
               </li>
             </ul>
           </div>
@@ -45,13 +60,15 @@
                 <a class="сatalog__item-link" href="#">
                   <img class="catalog__img" src="http://placehold.it/263x198" width="" height="" alt="">
                 </a>
-                <div class="catalog__item-description">
+                <div class="catalog__inner-wrapper">
+                  <div class="catalog__item-description">
                     <h1 class="catalog__item-name"><a class="catalog__item-link" href="#">Зайчик-попрыгайчик</a></h1>
                     <span class="catalog__item-params">Рост 30 см, вес 200г</span>
-                </div>
-                <div class="catalog__footer">
-                  <span class="catalog__price">1 200 руб.</span>
-                  <a class="btn catalog__btn" href="#">Купить</a>
+                  </div>
+                  <div class="catalog__footer">
+                    <span class="catalog__price">1 200 руб.</span>
+                    <a class="btn catalog__btn" href="#">Купить</a>
+                  </div>
                 </div>
               </div>
           </article>
@@ -60,14 +77,16 @@
                 <a class="сatalog__item-link" href="#">
                   <img class="catalog__img" src="http://placehold.it/263x198" width="" height="" alt="">
                 </a>
+                <div class="catalog__inner-wrapper">
                   <div class="catalog__item-description">
-                      <h1 class="catalog__item-name"><a class="catalog__item-link" href="#">Корзинка для белья</a></h1>
-                      <span class="catalog__item-params">Диаметр 15 см, высота 10 см</span>
+                    <h1 class="catalog__item-name"><a class="catalog__item-link" href="#">Корзинка для белья</a></h1>
+                    <span class="catalog__item-params">Диаметр 15 см, высота 10 см</span>
                   </div>
                   <div class="catalog__footer">
                     <span class="catalog__price">690 руб.</span>
                     <a class="btn catalog__btn" href="#">Купить</a>
                   </div>
+                </div>
               </div>
           </article>
           <article class="catalog__item">
@@ -75,6 +94,7 @@
                 <a class="сatalog__item-link" href="#">
                   <img class="catalog__img" src="http://placehold.it/263x198" width="" height="" alt="">
                 </a>
+                <div class="catalog__inner-wrapper">
                   <div class="catalog__item-description">
                     <h1 class="catalog__item-name"><a class="catalog__item-link" href="#">Большая корзинка для игрушек</a></h1>
                     <span class="catalog__item-params">Диаметр 30 см, высота 30 см</span>
@@ -83,6 +103,7 @@
                     <span class="catalog__price">1 500 руб.</span>
                     <a class="btn catalog__btn" href="#">Купить</a>
                   </div>
+                </div>
               </div>
           </article>
         </div>
@@ -90,19 +111,24 @@
       <section class="page-main__video video">
         <div class="video__wrapper">
           <h2 class="visually-hidden">Видео, посвященное процессу производства товаров интернет-магазина Мишка</h2>
-          <p class="video__title">Процесс производства</p>
-          <video class="video__video">
-            <source src="#" type=''>
-          </video>
-          <p class="video__text">
-              По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-          </p>
-          <a class="btn video__btn" href="form.html">Сделать заказ</a>
+          <div class="video__inner-wrapper">
+            <p class="video__title">Процесс производства</p>
+            <video class="video__video">
+              <source src="#" type=''>
+            </video>
+            <p class="video__text">
+                По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+            </p>
+            <a class="btn video__btn" href="form.html">Сделать заказ</a>
+          </div>
         </div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
+        <a class="page-footer__logo" href="index.html">
+          <img class="page-footer__logo-image" src="http://placehold.it/86x35">
+        </a>
         <section class="social">
           <h2 class="visually-hidden">Социальные аккаунты интернет-магазина Мишка: вязание на заказ. Милые штуки ручной работы для дома.</h2>
           <ul class="social__list">

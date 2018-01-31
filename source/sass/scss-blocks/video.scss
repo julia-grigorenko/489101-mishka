@@ -2,8 +2,11 @@
   @include width100;
   @include bg-white;
   @include outline-red;
+  background-color: yellow;
 
   .video__wrapper {
+    display: flex;
+    flex-direction: column;
     @include wrapper-wdth-mrgn-pddng;
     @include border-green;
   }
@@ -27,5 +30,70 @@
     line-height: 24px;
     @include font-family;
     color: $font-grey;
+  }
+}
+
+@media (min-width:$tablet-width) {
+  .video {
+
+    .video__wrapper {
+      width: 668px;
+      @include outline-red;
+      background-color: grey;
+    }
+
+    .video__title {
+      order: 1;
+    }
+
+    .video__video {
+
+    }
+
+    .video__text {
+      order: 2;
+    }
+
+    .video__btn {
+      order: 3;
+    }
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .video {
+
+
+
+    .video__wrapper {
+      position: relative;
+      align-items: flex-end;
+      width: 1151px;
+      @include outline-red;
+      background-color: grey;
+      height: 457px;
+    }
+
+    .video__inner-wrapper {
+      width: 232px;
+    }
+
+    .video__title {
+
+    }
+
+    .video__video {
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 684px;
+      height: 457px;
+      background-color: pink;
+      background-size: cover;
+    }
+
+    .video__text {
+      width: 232px;
+    }
   }
 }

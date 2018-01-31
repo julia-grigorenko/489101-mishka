@@ -7,3 +7,23 @@
     color: $font-black;
   }
 }
+
+@media (min-width:$tablet-width) {
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+
+    .copyright__text {
+
+    }
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .copyright {
+
+    .copyright__text {
+
+    }
+  }
+}

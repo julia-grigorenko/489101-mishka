@@ -1,0 +1,50 @@
+.main-nav {
+  width: auto;
+  margin: 0 auto;
+  background-color: red;
+
+  .main-nav__wrapper {
+    background-color: lightpink;
+  }
+
+  .main-nav__toggle {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 23px;
+    height: 23px;
+    font-size: 0;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    background-color: red;
+
+  }
+}
+
+@media (min-width:$tablet-width) {
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+
+    .main-nav__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 668px;
+      margin: 0 auto;
+    }
+
+    .main-nav__toggle {
+      display: none;
+    }
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .main-nav {
+    .main-nav__wrapper {
+        width: 1051px;
+    }
+  }
+}

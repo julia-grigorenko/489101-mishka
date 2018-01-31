@@ -2,6 +2,7 @@
   @include width100;
   @include bg-white;
   @include outline-red;
+  background-color: yellow;
 
   .advantages__wrapper {
     @include wrapper-wdth-mrgn-pddng;
@@ -21,5 +22,77 @@
     line-height: 20px;
     @include font-family-bold;
     color: $font-black;
+  }
+}
+
+@media (min-width:$tablet-width) {
+  .advantages {
+
+
+    .advantages__wrapper {
+      width: 668px;
+      @include outline-red;
+      background-color: grey;
+
+    }
+
+    .advantages__title {
+
+    }
+
+    .advantages__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .advantages__item {
+      width: 300px;
+      font-size: 20px;
+      line-height: 22px;
+      &--eco {
+
+      }
+      &--profit {
+        order: 3;
+      }
+      &--likes {
+        order: 5;
+      }
+      &--handmade {
+
+      }
+      &--domestic {
+        order: 4;
+      }
+      &--pack {
+        order: 6;
+      }
+    }
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .advantages {
+
+
+    .advantages__wrapper {
+      padding-left: 176px;
+      width: 1151px;
+      @include outline-red;
+      background-color: grey;
+    }
+
+    .advantages__inner-wrapper {
+      width: 668px;
+    }
+
+    .advantages__title {
+    }
+
+    .advantages__list {
+    }
+
+    .advantages__item {
+    }
   }
 }

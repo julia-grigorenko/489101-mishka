@@ -2,6 +2,7 @@
   @include width100;
   @include bg-white;
   @include outline-red;
+  background-color: yellow;
 
   .promo__wrapper {
     @include wrapper-wdth-mrgn-pddng;
@@ -39,4 +40,99 @@
    @include font-family-bold;
    color: $font-grey;
  }
+}
+
+@media (min-width:$tablet-width) {
+  .promo {
+
+
+    .promo__wrapper {
+      position: relative;
+      width: 668px;
+      @include outline-red;
+      background-color: grey;
+
+    }
+
+    .promo__name-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .promo__title {
+    }
+
+    .promo__name {
+      width: 73px;
+    }
+
+    .promo__description {
+      width: 333px;
+    }
+
+    .promo__params {
+      width: 333px;
+
+    }
+
+     .params__item {
+
+     }
+
+     .promo__img {
+       position: absolute;
+       right: 0px;
+       top: 50px;
+     }
+
+     .promo__price {
+       width: 333px;
+       height: 70px;
+       background-color: pink;
+     }
+
+     .promo__btn {
+       width: 333px;
+       height: 50px;
+     }
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .promo {
+
+
+    .promo__wrapper {
+      padding-left: 176px;
+      width: 1151px;
+      @include outline-red;
+      background-color: grey;
+
+    }
+
+    .promo__name-wrapper {
+      justify-content: flex-start;
+      margin-left: -130px;
+    }
+
+    .promo__title {
+      order: 2;
+      font-size: 53px;
+      line-height: 57px;
+    }
+
+    .promo__name {
+      margin-right: 60px;
+    }
+
+    .promo__description {
+    }
+
+   .params__item {
+   }
+
+   .promo__price {
+   }
+  }
 }

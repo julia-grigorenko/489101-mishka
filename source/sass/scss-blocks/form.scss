@@ -26,3 +26,97 @@
       color: $font-grey;
     }
 }
+
+@media (min-width:$tablet-width) {
+  .form {
+
+    .form__group-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .form__group-title {
+      width: 25%;
+    }
+
+    .form__group-content {
+      width: 75%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      &--colors {
+        height: 302px;
+      }
+    }
+
+    .form__checkbox-item {
+      height: 100px;
+      &--grey {
+        order: 1;
+      }
+      &--black {
+        order: 2;
+      }
+      &--orange {
+        order: 3;
+      }
+    }
+
+    .form__radio-text {
+
+    }
+
+    .form__checkbox-text {
+
+    }
+
+    .form__text {
+
+    }
+    .form__note-btn-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .form__note {
+      order: 2;
+    }
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .form {
+
+      .form__group-title {
+
+      }
+
+      .form__group-content {
+
+        &--colors {
+          flex-direction: row;
+        }
+      }
+
+      .form__radio-text {
+
+      }
+
+      .form__checkbox-item {
+        width:  204px;
+        background-color: #fff;
+      }
+
+      .form__checkbox-text {
+
+      }
+
+      .form__text {
+
+      }
+
+      .form__note {
+
+      }
+  }
+}

@@ -2,6 +2,7 @@
   @include width100;
   @include bg-white;
   @include outline-red;
+  background-color: yellow;
 
   .order__wrapper {
     @include wrapper-wdth-mrgn-pddng;
@@ -12,12 +13,16 @@
     @include width100;
     @include bg-grey;
     @include outline-red;
+    margin: 0 auto;
   }
 
   .order__title {
     @include wrapper-wdth-mrgn-pddng;
+
     @include font-family-page-title;
     @include border-green;
+    padding-top: 77px;
+    padding-bottom: 80px;
   }
 
   .order__description {
@@ -25,5 +30,56 @@
     line-height: 24px;
     @include font-family;
     color: $font-grey;
+  }
+}
+
+@media (min-width:$tablet-width) {
+  .order {
+
+
+    .order__wrapper {
+      width: 668px;
+      @include outline-red;
+      background-color: grey;
+    }
+
+    .order__title-wrapper {
+
+    }
+
+    .order__title {
+      padding-top: 60px;
+      padding-bottom: 90px;
+      font-size: 43px;
+      line-height: 50px
+    }
+
+    .order__description {
+
+    }
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .order {
+
+
+    .order__wrapper {
+      width: 1151px;
+      @include outline-red;
+      background-color: grey;
+    }
+
+    .order__title-wrapper {
+
+    }
+
+    .order__title {
+
+    }
+
+    .order__description {
+
+    }
   }
 }

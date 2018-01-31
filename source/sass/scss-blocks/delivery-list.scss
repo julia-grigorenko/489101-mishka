@@ -1,0 +1,35 @@
+.delivery-list {
+  @include list-reset;
+  display: none;
+
+  .delivery-list__link{
+    font-size: 15px;
+    line-height: 24px;
+    @include font-family;
+    color: $font-grey;
+  }
+}
+
+@media (min-width:$tablet-width) {
+  .delivery-list {
+    display: flex;
+    order: 2;
+    background-color: #fff;
+
+    .delivery-list__item {
+      height: 79px;
+      display: flex;
+    }
+
+    .delivery-list__link {
+      margin: auto;
+    }
+  }
+
+}
+
+@media (min-width:$desktop-width) {
+  .delivery-list {
+
+  }
+}
