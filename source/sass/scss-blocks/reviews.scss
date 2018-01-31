@@ -31,6 +31,10 @@
     @include font-family;
     color: $font-grey;
   }
+
+  .reviews__btn-wrapper {
+    display: flex;
+  }
 }
 
 @media (min-width:$tablet-width) {
@@ -72,7 +76,6 @@
     }
 
     .reviews__btn-wrapper {
-      display: flex;
     }
   }
 }
