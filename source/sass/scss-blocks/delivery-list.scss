@@ -1,35 +1,29 @@
 .delivery-list {
-  @include list-reset;
-  display: none;
 
-  .delivery-list__link{
-    font-size: 15px;
-    line-height: 24px;
-    @include font-family;
-    color: $font-grey;
-  }
+  display: none;
 }
 
 @media (min-width:$tablet-width) {
   .delivery-list {
+    @include list-reset;
     display: flex;
     order: 2;
-    background-color: #fff;
 
     .delivery-list__item {
-      height: 79px;
-      display: flex;
+      padding-top:22px;
+      padding-bottom: 22px;
     }
 
-    .delivery-list__link {
-      margin: auto;
+    .delivery-list__link{
+      font-size: 15px;
+      line-height: 24px;
+      @include font-family;
+      color: $font-grey;
     }
   }
-
 }
 
 @media (min-width:$desktop-width) {
   .delivery-list {
-
   }
 }

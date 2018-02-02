@@ -2,16 +2,60 @@
   @include list-reset;
 
   .user-list__item {
-    display: flex;
-    height: 79px;
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 30px;
+    &:after {
+      @media (max-width:$tablet-width - 1px) {
+        position: absolute;
+        top: 74px;
+        left: 0px;
+        content: "";
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid #ececec;
+      }
+    }
   }
 
   .user-list__link{
-    margin: auto;
+    @include wrapper-wdth-mrgn;
+    display: block;
+    position: relative;
+    padding-left: 75px;
     font-size: 17px;
     line-height: 24px;
     @include font-family-bold;
     color: $font-black;
+    &:hover {
+      opacity: 0.6;
+    }
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .user-list__ico {
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+    path {
+      fill: #d3d2d2;
+    }
+    &:hover {
+      path {
+        fill: #63d1bb;
+      }
+    }
+    &:active {
+      path {
+        fill: #63d1bb;
+        opacity: 0.3;
+      }
+    }
   }
 }
 
@@ -20,33 +64,42 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
     width: 100%;
-    height: 89px;
-    background-color: orange;
+    //background-color: orange;
 
     .user-list__item {
-
+      display: flex;
+      padding-right: 0px;
+      padding-top: 28px;
+      padding-bottom: 36px;
+      &--search {
+        padding-top: 30px;
+        padding-bottom: 36px;
+        border-right: 1px solid #ececec;
+        border-left:1px solid #ececec;
+      }
     }
 
     .user-list__link {
-
+      width: auto;
+      padding-left: 74px;
+      &--search {
+        padding-left: 84px;
+        margin: auto;
+        width: 23px;
+        height: 23px;
+        font-size: 0;
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+        //background-color: red;
+      }
     }
 
-    .user-list__item--search {
-      width: 83px;
-      background-color: #fff;
-    }
-
-    .user-list__link--search {
-      margin: auto;
-      width: 23px;
-      height: 23px;
-      font-size: 0;
-      background-color: transparent;
-      border: 0;
-      cursor: pointer;
-      background-color: red;
+    .user-list__ico {
+      &--cart {
+        left: 23px;
+      }
     }
   }
 }
@@ -54,6 +107,12 @@
 @media (min-width:$desktop-width) {
   .user-list {
     justify-content: space-between;
-    width: 400px;
+    width: 342px;
+
+    .user-list__ico {
+      &--cart {
+        left: 33px;
+      }
+    }
   }
 }
