@@ -5,4 +5,8 @@
   @include font-family-bold;
   color: $font-grey;
   @include bg-white;
+  border: 2px solid $font-grey;
+  padding: 13px 0px;
+  text-transform: uppercase;
+  text-align: center;
 }

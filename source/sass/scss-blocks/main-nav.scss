@@ -1,9 +1,6 @@
 .main-nav {
   position: relative;
 
-  .main-nav__wrapper {
-  }
-
   .main-nav__toggle {
     position: absolute;
     top: -50px;
@@ -70,7 +67,6 @@
   .main-nav {
     display: flex;
     flex-wrap: wrap;
-    // background-color: red;
 
     .main-nav__wrapper {
       display: flex;
@@ -80,7 +76,7 @@
       padding-left: 50px;
       padding-right: 50px;
       margin: 0 auto;
-      margin-bottom: -69px;
+      margin-bottom: -74px;
     }
 
     .main-nav__toggle {
@@ -94,7 +90,6 @@
     .main-nav__wrapper {
       width: 1151px;
       margin-bottom: -74px;
-      // background-color: lightpink;
     }
   }
 }

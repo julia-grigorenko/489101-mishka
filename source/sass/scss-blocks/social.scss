@@ -3,7 +3,39 @@
   .social__list {
     @include list-reset;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    //background-color: pink;
+    margin: auto;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    border-bottom:1px solid #e5e5e5;
+  }
+
+  .social__item {
+    padding-right: 40px;
+    &:last-child {
+      padding-right: 0px;
+    }
+  }
+
+  .social__ico {
+    &--facebook {
+      margin-top: -5px;
+    }
+    path {
+      fill: #231F20;
+    }
+    &:hover {
+      path {
+        fill: #46c1ae;
+      }
+    }
+    &:active {
+      path {
+        fill: #46c1ae;
+        opacity: 0.3;
+      }
+    }
   }
 }
 
@@ -11,7 +43,9 @@
   .social {
 
     .social__list {
-
+      border-bottom: none;
+      padding-left: 88px;
+      padding-top: 30px;
     }
   }
 }
@@ -20,6 +54,7 @@
   .social {
 
     .social__list {
+      padding-left: 72px;
     }
   }
 }
