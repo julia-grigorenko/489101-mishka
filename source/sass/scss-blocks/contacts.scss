@@ -42,11 +42,28 @@
 
   .email__name {
     border-bottom: 1px solid $bordre-green;
+    &:hover {
+      color: #46c1ae;
+    }
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .contacts__btn-wrapper {
     @include wrapper-wdth-mrgn-pddng;
     padding: 40px 30px;
+  }
+
+  .contacts__btn {
+    &:hover {
+      color: #ffffff;
+      background-color: $font-grey;
+    }
+    &:active {
+      color: rgba(255,255,255,0.3);
+      background-color: $font-grey;
+    }
   }
 }
 @media (min-width:$tablet-width) {

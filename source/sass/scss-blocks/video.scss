@@ -45,6 +45,14 @@
     margin-left: 30px;
     margin-bottom: 32px;
     width: 190px;
+    &:hover {
+      color: #ffffff;
+      background-color: $font-grey;
+    }
+    &:active {
+      color: rgba(255,255,255,0.3);
+      background-color: $font-grey;
+    }
   }
 }
 
@@ -111,6 +119,12 @@
       width: 1051px;
       border: 1px solid #ededed;
       border-radius: 3px;
+      &:hover {
+        box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+      }
+      &:active {
+        box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+      }
     }
 
     .video__inner-wrapper {
