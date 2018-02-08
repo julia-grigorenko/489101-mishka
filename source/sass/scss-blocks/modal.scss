@@ -10,12 +10,9 @@
 
 .modal {
   @include width100;
-  @include outline-red;
-
 
   .modal__wrapper {
     @include wrapper-wdth-mrgn-pddng;
-    // @include border-green;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -34,14 +31,14 @@
     text-align: center;
   }
 
-  .form-group {
+  .modal__form-group {
     margin: 0px;
     padding: 0px;
     outline: none;
     border: none;
   }
 
-  .form-group__title {
+  .modal__form-title {
     @include font-family-text;
     text-align: center;
     padding-top: 12px;
@@ -49,16 +46,27 @@
 
   }
 
-  .field-radio__list {
+  .modal__form-content {
     display: flex;
     justify-content: space-between;
 
   }
 
-  .field-radio__item {
-    display: flex;
+  .modal__form-radio-input {
+    display: none;
+  }
+
+  .modal__form-radio-text {
+    display: block;
+    text-align: center;
+    font-size: 17px;
+    line-height: 16px;
+    @include font-family-bold;
+    color: $font-grey;
+    text-transform: uppercase;
+    padding-top: 16px;
+    padding-bottom: 16px;
     width: 81px;
-    height: 50px;
     border: 2px solid rgba(68,68,68,0.3);
     &:hover {
       border: 2px solid rgba(68,68,68,0.1);
@@ -68,21 +76,8 @@
     }
   }
 
-  .field-radio__input {
-    display: none;
-  }
-
-  .field-radio__input:checked + .field-radio__item {
+  .modal__form-radio-input:checked + .modal__form-radio-text {
     border-color: #62d1ba;
-  }
-
-  .field-radio__text {
-    margin: auto;
-    font-size: 17px;
-    line-height: 16px;
-    @include font-family-bold;
-    color: $font-grey;
-    text-transform: uppercase;
   }
 
   .modal__btn {
@@ -103,7 +98,16 @@
   }
 }
 
+.modal-close {
+  display: none;
+}
+
 @media (min-width:$tablet-width) {
+
+  .modal-close {
+    display: none;
+  }
+
   .modal {
 
     .modal__wrapper {
@@ -139,5 +143,7 @@
 
 @media (min-width:$desktop-width) {
 
-
+  .modal-close {
+    display: none;
+  }
 }

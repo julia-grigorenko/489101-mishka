@@ -10,7 +10,8 @@
     @include wrapper-wdth-mrgn;
     display: block;
     padding: 16px 30px;
-    padding-left: 100px;
+    // padding-left: 100px;
+    padding-left: 117px;
     &:after {
       @media (max-width:$tablet-width - 1px) {
         position: absolute;

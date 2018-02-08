@@ -23,7 +23,8 @@
   .site-list__link{
     @include wrapper-wdth-mrgn;
     display: block;
-    padding-left: 75px;
+    // padding-left: 75px;
+    padding-left: 89px;
     font-size: 17px;
     line-height: 24px;
     @include font-family-bold;

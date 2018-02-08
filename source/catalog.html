@@ -26,7 +26,7 @@
           <img class="page-header__logo-image" src="http://placehold.it/151x74">
         </a>
       </div>
-      <nav class="main-nav main-nav--opened">
+      <nav class="main-nav main-nav--opened .main-nav--nojs">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -244,25 +244,25 @@
         </section>
       </div>
     </footer>
-    <div class="modal-overlay visually-hidden">
+    <div class="modal-overlay modal-close">
       <div class="modal">
         <div class="modal__wrapper">
           <h2 class="modal__title">Добавить в корзину</h2>
           <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
-            <fieldset class="modal__form-group form-group">
-                <legend class="form-group__title">Выберите размер:</legend>
-                <div class="form-group__content field-radio__list">
-                    <label class="field-radio__item">
-                        <input class="field-radio__input visually-hidden" type="radio" name="s" value="s" checked>
-                        <span class="field-radio__text">s</span>
+            <fieldset class="modal__form-group">
+                <legend class="modal__form-title">Выберите размер:</legend>
+                <div class="modal__form-content">
+                    <label class="modal__form-radio-item">
+                        <input class="modal__form-radio-input" type="radio" name="size" value="s" checked>
+                        <span class="modal__form-radio-text">s</span>
                     </label>
-                    <label class="field-radio__item">
-                        <input class="field-radio__input visually-hidden" type="radio" name="m" value="m">
-                        <span class="field-radio__text">m</span>
+                    <label class="modal__form-radio-item">
+                        <input class="modal__form-radio-input" type="radio" name="size" value="m">
+                        <span class="modal__form-radio-text">m</span>
                     </label>
-                    <label class="field-radio__item">
-                        <input class="field-radio__input visually-hidden" type="radio" name="l" value="l">
-                        <span class="field-radio__text">l</span>
+                    <label class="modal__form-radio-item">
+                        <input class="modal__form-radio-input" type="radio" name="size" value="l">
+                        <span class="modal__form-radio-text">l</span>
                     </label>
                 </div>
             </fieldset>
@@ -271,5 +271,6 @@
         </div>
       </div>
     </div>
+    <script src="js/common.js"></script>
   </body>
 </html>

@@ -26,7 +26,7 @@
           <img class="page-header__logo-image" src="http://placehold.it/151x74">
         </a>
       </div>
-        <nav class="main-nav main-nav--opened">
+        <nav class="main-nav main-nav--opened .main-nav--nojs">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
@@ -86,11 +86,11 @@
                 <legend class="form__group-title">Тип</legend>
                 <div class="form__group-content">
                   <label class="form__radio-item">
-                    <input class="form__radio-input visually-hidden" type="radio" name="order-category" value="accessory" checked>
+                    <input class="form__radio-input" type="radio" name="order-category" value="accessory" checked>
                     <span class="form__radio-text">Аксессуар для интерьера</span>
                   </label>
                   <label class="form__radio-item">
-                    <input class="form__radio-input visually-hidden" type="radio" name="order-category" value="toy">
+                    <input class="form__radio-input" type="radio" name="order-category" value="toy">
                     <span class="form__radio-text form__radio-text--toy">Детская игрушка</span>
                   </label>
                 </div>
@@ -101,27 +101,27 @@
                 <legend class="form__group-title">Цвет</legend>
                 <div class="form__group-content form__group-content--colors">
                   <label class="form__checkbox-item form__checkbox-item--white">
-                    <input class="form__checkbox-input visually-hidden" type="checkbox" name="white" checked>
+                    <input class="form__checkbox-input" type="checkbox" name="white" checked>
                     <span class="form__checkbox-text">Белый</span>
                   </label>
                   <label class="form__checkbox-item form__checkbox-item--grey">
-                    <input class="form__checkbox-input visually-hidden" type="checkbox" name="grey" checked>
+                    <input class="form__checkbox-input" type="checkbox" name="grey" checked>
                     <span class="form__checkbox-text">Серый</span>
                   </label>
                   <label class="form__checkbox-item form__checkbox-item--tiffany">
-                    <input class="form__checkbox-input visually-hidden" type="checkbox" name="tiffany">
+                    <input class="form__checkbox-input" type="checkbox" name="tiffany">
                     <span class="form__checkbox-text">«Тиффани»</span>
                   </label>
                   <label class="form__checkbox-item form__checkbox-item--black">
-                    <input class="form__checkbox-input visually-hidden" type="checkbox" name="black">
+                    <input class="form__checkbox-input" type="checkbox" name="black">
                     <span class="form__checkbox-text">Черный</span>
                   </label>
                   <label class="form__checkbox-item form__checkbox-item--pink">
-                    <input class="form__checkbox-input visually-hidden" type="checkbox" name="pink">
+                    <input class="form__checkbox-input" type="checkbox" name="pink">
                     <span class="form__checkbox-text">Розовый</span>
                   </label>
                   <label class="form__checkbox-item form__checkbox-item--orange">
-                    <input class="form__checkbox-input visually-hidden" type="checkbox" name="orange">
+                    <input class="form__checkbox-input" type="checkbox" name="orange">
                     <span class="form__checkbox-text form__checkbox-text--orange">Оранжевый</span>
                   </label>
                 </div>
@@ -256,5 +256,6 @@
         </section>
       </div>
     </footer>
+    <script src="js/common.js"></script>
   </body>
 </html>
