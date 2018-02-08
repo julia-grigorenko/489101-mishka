@@ -1,24 +1,73 @@
-.main-nav {
-  width: auto;
-  margin: 0 auto;
-  background-color: red;
+@media (max-width: $tablet-width - 1) {
+  .main-nav {
+    position: relative;
 
-  .main-nav__wrapper {
-    background-color: lightpink;
+    .main-nav__toggle {
+      position: absolute;
+      top: -47px;
+      right: 14px;
+      z-index: 2;
+      display: block;
+      padding: 0px;
+      width: 23px;
+      height: 23px;
+      font-size: 0;
+      background-color: transparent;
+      border: 0;
+      cursor: pointer;
+    }
   }
 
-  .main-nav__toggle {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    width: 23px;
-    height: 23px;
-    font-size: 0;
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
-    background-color: red;
+  .main-nav--closed {
 
+    .main-nav__toggle::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      z-index: 2;
+      width: 23px;
+      height: 2px;
+      background-color: #221f1f;
+      box-shadow: 0 6px 0 0 #221f1f, 0 12px 0 0 #221f1f;
+    }
+
+    .user-list__item {
+      display: none;
+    }
+
+    .site-list__item {
+      display: none;
+    }
+  }
+
+  .main-nav--opened {
+    .main-nav__toggle {
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left:-3px;
+        width: 30px;
+        height: 2px;
+        background-color: #221f1f;
+      }
+      &::before {
+        transform: rotate(45deg);
+        box-shadow: none;
+      }
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  .main-nav--nojs {
+    .main-nav__toggle {
+      display: none;
+    }
   }
 }
 
@@ -31,8 +80,11 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      width: 668px;
+      width: 768px;
+      padding-left: 50px;
+      padding-right: 50px;
       margin: 0 auto;
+      margin-bottom: -74px;
     }
 
     .main-nav__toggle {
@@ -44,7 +96,8 @@
 @media (min-width:$desktop-width) {
   .main-nav {
     .main-nav__wrapper {
-        width: 1051px;
+      width: 1151px;
+      margin-bottom: -74px;
     }
   }
 }

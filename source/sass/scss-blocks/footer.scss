@@ -1,11 +1,9 @@
 .page-footer {
   @include width100;
   @include bg-grey;
-  @include outline-red;
 
   .page-footer__wrapper {
     @include wrapper-wdth-mrgn-pddng;
-    @include border-green;
   }
 
   .page-footer__logo {
@@ -17,14 +15,36 @@
   .page-footer {
 
     .page-footer__wrapper {
-      width: 668px;
-      @include outline-red;
+      width: $tablet-width;
+      padding-top: 31px;
+      padding-bottom: 24px;
+      padding-left: 50px;
+      padding-right: 50px;
       display: flex;
       justify-content: space-between;
     }
 
     .page-footer__logo {
       display: block;
+      width: 104px;
+      padding-top: 20px;
+      padding-bottom: 24px;
+    }
+
+    .page-footer__logo-image {
+      width: 104px;
+      height:35px;
+      &:hover {
+        path {
+          fill: $bg-middle-green;
+        }
+      }
+      &:active {
+        path {
+          fill: $bg-middle-green;
+          opacity: 0.3;
+        }
+      }
     }
   }
 }
@@ -33,9 +53,8 @@
   .page-footer {
 
     .page-footer__wrapper {
-      padding-left: 176px;
-      width: 1151px;
-      @include outline-red;
+      padding-top: 25px;
+      width: $desktop-width;
     }
   }
 }

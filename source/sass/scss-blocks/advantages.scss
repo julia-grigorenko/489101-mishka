@@ -1,16 +1,19 @@
 .advantages {
   @include width100;
   @include bg-white;
-  @include outline-red;
-  background-color: yellow;
+
 
   .advantages__wrapper {
     @include wrapper-wdth-mrgn-pddng;
-    @include border-green;
+    padding-bottom: 22px;
+
   }
 
   .advantages__title {
     @include font-family-title;
+    padding-top: 26px;
+    padding-bottom: 36px;
+    margin: 0px;
   }
 
   .advantages__list {
@@ -18,26 +21,55 @@
   }
 
   .advantages__item {
+    padding-top: 55px;
+    height: 92px;
     font-size: 17px;
     line-height: 20px;
     @include font-family-bold;
     color: $font-black;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-color: white;
+    margin-bottom: 35px;
+
+    &--eco {
+      background-image: url("../img/icon-feature-flower.svg");
+    }
+    &--profit {
+      background-image: url("../img/icon-feature-money.svg");
+    }
+    &--likes {
+      background-image: url("../img/icon-feature-heart.svg");
+    }
+    &--handmade {
+      background-image: url("../img/icon-feature-ball.svg");
+    }
+    &--domestic {
+      background-image: url("../img/icon-feature-rocket.svg");
+    }
+    &--pack {
+      background-image: url("../img/icon-feature-gift.svg");
+    }
   }
+
 }
 
 @media (min-width:$tablet-width) {
   .advantages {
 
-
     .advantages__wrapper {
-      width: 668px;
-      @include outline-red;
-      background-color: grey;
+      width: $tablet-width;
+      padding: 0 50px;
+      margin-bottom: 23px;
 
     }
 
     .advantages__title {
-
+      padding-top: 50px;
+      padding-bottom: 46px;
+      margin: 0px;
+      font-size: 43px;
+      line-height: 50px;
     }
 
     .advantages__list {
@@ -49,17 +81,21 @@
       width: 300px;
       font-size: 20px;
       line-height: 22px;
-      &--eco {
-
-      }
+      padding-top: 55px;
+      margin-right: 34px;
+      height: 102px;
+      font-size: 20px;
+      line-height: 22px;
+      @include font-family-bold;
+      color: $font-black;
+      background-repeat: no-repeat;
+      background-position: 0px 0px;
+      margin-bottom: 57px;
       &--profit {
         order: 3;
       }
       &--likes {
         order: 5;
-      }
-      &--handmade {
-
       }
       &--domestic {
         order: 4;
@@ -74,25 +110,33 @@
 @media (min-width:$desktop-width) {
   .advantages {
 
-
     .advantages__wrapper {
-      padding-left: 176px;
-      width: 1151px;
-      @include outline-red;
-      background-color: grey;
+      padding-left: 225px;
+      width: $desktop-width;
+      margin-bottom: 30px;
     }
 
     .advantages__inner-wrapper {
-      width: 668px;
+      width: 702px;
     }
 
     .advantages__title {
+      padding-top: 59px;
+      padding-bottom: 47px;
+      margin: 0px;
+      font-size: 53px;
+      line-height: 57px;
     }
 
     .advantages__list {
     }
 
     .advantages__item {
+      height: 100px;
+      width: 297px;
+      padding-top: 53px;
+      margin-right: 53px;
+      margin-bottom: 59px;
     }
   }
 }

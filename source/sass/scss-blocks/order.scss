@@ -1,31 +1,28 @@
 .order {
   @include width100;
   @include bg-white;
-  @include outline-red;
-  background-color: yellow;
 
   .order__wrapper {
     @include wrapper-wdth-mrgn-pddng;
-    @include border-green;
   }
 
   .order__title-wrapper {
     @include width100;
-    @include bg-grey;
-    @include outline-red;
     margin: 0 auto;
+    background-color: $bg-grey;
   }
 
   .order__title {
     @include wrapper-wdth-mrgn-pddng;
-
     @include font-family-page-title;
-    @include border-green;
-    padding-top: 77px;
-    padding-bottom: 80px;
+    padding-top: 71px;
+    padding-bottom: 78px;
   }
 
   .order__description {
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 17px;
     font-size: 13px;
     line-height: 24px;
     @include font-family;
@@ -36,26 +33,35 @@
 @media (min-width:$tablet-width) {
   .order {
 
-
-    .order__wrapper {
-      width: 668px;
-      @include outline-red;
-      background-color: grey;
-    }
-
     .order__title-wrapper {
-
+      border-top: 1px solid #dfdfdf;
     }
 
     .order__title {
-      padding-top: 60px;
-      padding-bottom: 90px;
+      width: $tablet-width;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 100px;
+      padding-bottom: 72px;
       font-size: 43px;
-      line-height: 50px
+      line-height: 50px;
+      color: $font-black;
+      text-align: center;
+    }
+
+    .order__wrapper {
+      width: 100%;
+      padding: 0px;
     }
 
     .order__description {
-
+      margin: 0px auto;
+      width: $tablet-width;
+      padding: 0px 50px;
+      padding-top: 72px;
+      padding-bottom: 20px;
+      font-size: 17px;
+      line-height: 30px;
     }
   }
 }
@@ -63,23 +69,20 @@
 @media (min-width:$desktop-width) {
   .order {
 
-
     .order__wrapper {
-      width: 1151px;
-      @include outline-red;
-      background-color: grey;
     }
 
     .order__title-wrapper {
-
     }
 
     .order__title {
-
+      padding-top: 92px;
+      padding-bottom: 104px;
+      font-size: 53px;
+      line-height: 57px;
     }
 
     .order__description {
-
     }
   }
 }
