@@ -4,10 +4,13 @@
   @include bg-white;
 
   .page-header__wrapper {
+
   }
 
   .page-header__logo {
     @include wrapper-wdth-mrgn;
+    // width: 88px;
+    // height: 38px;
     display: block;
     padding: 16px 30px;
     // padding-left: 100px;
@@ -47,13 +50,13 @@
       left:50px;
       top:20px;
       z-index: 2;
-      width: 113px;
-      height: 47px;
+      // width: 113px;
+      // height: 47px;
       //background-color: black;
     }
 
     .page-header__logo-image {
-      width: 113px;
+      width: 117px;
       height: 47px;
     }
   }
@@ -72,9 +75,12 @@
       left: 0;
       right: 0;
       // height: 37 px;
-      width: 115px;
-      height: 47px;
-      background-color: lightgreen;
+
+    }
+
+    .page-header__logo-image {
+      width: 155px;
+      height: 75px;
     }
   }
 }
