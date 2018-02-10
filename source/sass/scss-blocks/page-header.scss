@@ -12,9 +12,12 @@
     // width: 88px;
     // height: 38px;
     display: block;
-    padding: 16px 30px;
-    // padding-left: 100px;
-    padding-left: 117px;
+    padding-left:26px;
+    padding-right:26px;
+    padding-top:20px;
+    padding-bottom: 13px;
+
+    padding-left: 113px;
     &:after {
       @media (max-width:$tablet-width - 1px) {
         position: absolute;

@@ -9,7 +9,7 @@
   .category__header {
     padding: 0px 30px;
     background-image: url("../img/hero-mobile@1x.jpg");
-    background-position: -128px -12px;
+    background-position: -128px -18px;
     background-repeat: no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -21,8 +21,8 @@
   .category__header-text {
     margin: 0px auto;
     // width: 216px;
-    padding-top: 75px;
-    padding-bottom: 120px;
+    padding-top: 71px;
+    padding-bottom: 116px;
     font-size: 27px;
     line-height: 30px;
     @include font-family-bold;
@@ -73,6 +73,7 @@
 
   .category-list__text {
     display: block;
+    padding-top: 5px;
     width: 50%;
     font-size: 19px;
     line-height: 24px;
@@ -85,7 +86,7 @@
 
   .category-list__image {
     &--light-green {
-      margin-right: 9px;
+      margin-right: -10px;
       fill: #149080;
       opacity: 0.7;
     }
