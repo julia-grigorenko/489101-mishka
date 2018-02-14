@@ -47,11 +47,17 @@
 
   .catalog__description-link {
     display: block;
+    padding-bottom: 5px;
     font-size: 17px;
     line-height: 24px;
     @include font-family-bold;
     color: $font-black;
-    padding-bottom: 5px;
+    &:hover {
+      opacity: 0.6;
+    }
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .catalog__item-params {
@@ -88,19 +94,13 @@
   }
 
   .catalog__btn-ico {
-    path{
-      fill: #d9d9d9;
-    }
+    fill: #d9d9d9;
     &:hover {
-      path {
-        fill: #63d1bb;
-      }
+      fill: #63d1bb;
     }
     &:active {
-      path {
-        fill: #63d1bb;
-        opacity: 0.3;
-      }
+      fill: #63d1bb;
+      opacity: 0.3;
     }
   }
 }
@@ -110,6 +110,18 @@
 
     .catalog__title-wrapper {
       margin-bottom: 25px;
+      border-top: 1px solid #dfdfdf;
+      &::after {
+        position: absolute;
+        content: "";
+        display: block;
+        top: 300px;
+        left: 0px;
+        width: 100%;
+        height: 24px;
+        background: url("../img/bg-zigzag-fill.svg") repeat-x;
+        background-size: 768px 26px;
+      }
     }
 
     .catalog__title {
@@ -194,7 +206,9 @@
 
     .catalog__title-wrapper {
       margin-bottom: 75px;
-      border-top: 1px solid #dfdfdf;
+      &::after {
+        top: 320px;
+      }
     }
 
     .catalog__title {

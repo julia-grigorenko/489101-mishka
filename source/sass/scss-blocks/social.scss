@@ -4,37 +4,48 @@
     @include list-reset;
     display: flex;
     justify-content: center;
-    //background-color: pink;
     margin: auto;
-    padding-top: 23px;
-    padding-bottom: 23px;
+    padding-top: 25px;
+    padding-bottom: 20px;
     border-bottom:1px solid #e5e5e5;
   }
 
   .social__item {
-    padding-right: 40px;
+    padding-right: 43px;
     &:last-child {
       padding-right: 0px;
     }
   }
 
+  .social__link {
+    &--instagram {
+      width: 22px;
+      height: 22px;
+    }
+    &--facebook {
+      width: 15px;
+      height: 28px;
+    }
+    &--twitter {
+      width: 24px;
+      height: 20px;
+    }
+  }
+
   .social__ico {
+    fill: #231F20;
+    &:hover {
+      fill: #46c1ae;
+    }
+    &:active {
+      fill: #46c1ae;
+        opacity: 0.3;
+    }
     &--facebook {
       margin-top: -5px;
     }
-    path {
-      fill: #231F20;
-    }
-    &:hover {
-      path {
-        fill: #46c1ae;
-      }
-    }
-    &:active {
-      path {
-        fill: #46c1ae;
-        opacity: 0.3;
-      }
+    &--twitter {
+      margin-right: 12px;
     }
   }
 }

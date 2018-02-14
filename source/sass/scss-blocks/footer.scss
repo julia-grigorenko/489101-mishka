@@ -26,24 +26,21 @@
 
     .page-footer__logo {
       display: block;
-      width: 104px;
+      width: 102px;
+      height: 34px;
       padding-top: 20px;
       padding-bottom: 24px;
     }
 
     .page-footer__logo-image {
-      width: 104px;
-      height:35px;
+      width: 102px;
+      height:34px;
       &:hover {
-        path {
-          fill: $bg-middle-green;
-        }
+        fill: $bg-middle-green;
       }
       &:active {
-        path {
-          fill: $bg-middle-green;
-          opacity: 0.3;
-        }
+        fill: $bg-middle-green;
+        opacity: 0.3;
       }
     }
   }

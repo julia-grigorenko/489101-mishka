@@ -23,7 +23,6 @@
     @include wrapper-wdth-mrgn;
     display: block;
     position: relative;
-    // padding-left: 75px;
     padding-left: 88px;
     font-size: 17px;
     line-height: 24px;
@@ -40,23 +39,24 @@
   .user-list__ico {
     position: absolute;
     top: 0px;
-    // left: 30px;
     left: 40px;
-    width: 20px;
-    height: 20px;
-    path {
-      fill: #d3d2d2;
+    width: 18px;
+    height: 18px;
+    fill: #d3d2d2;
+    &--cart {
+      width: 20px;
+      height: 19px;
+    }
+    &--search {
+      width: 18px;
+      height: 18px;
     }
     &:hover {
-      path {
-        fill: #63d1bb;
-      }
+      fill: #63d1bb;
     }
     &:active {
-      path {
-        fill: #63d1bb;
-        opacity: 0.3;
-      }
+      fill: #63d1bb;
+      opacity: 0.3;
     }
   }
 }
@@ -67,26 +67,34 @@
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-    //background-color: orange;
-
     .user-list__item {
+      position: relative;
       display: flex;
       padding-right: 0px;
-      padding-top: 28px;
-      padding-bottom: 36px;
+      padding-top: 30px;
+      padding-bottom: 34px;
       &--search {
-        padding-top: 30px;
-        padding-bottom: 36px;
-        border-right: 1px solid #ececec;
+        padding-top: 36px;
+        padding-bottom: 29px;
+        padding-right: 16px;
         border-left:1px solid #ececec;
+        &:after {
+          position: absolute;
+          content: "";
+          top:0px ;
+          left:81px;
+          width: 1px;
+          height: 90px;
+          background-color: #ececec;
+        }
       }
     }
 
     .user-list__link {
       width: auto;
-      padding-left: 74px;
+      padding-left: 76px;
       &--search {
-        padding-left: 84px;
+        padding-left: 76px;
         margin: auto;
         width: 23px;
         height: 23px;
@@ -94,13 +102,17 @@
         background-color: transparent;
         border: 0;
         cursor: pointer;
-        //background-color: red;
       }
     }
 
     .user-list__ico {
       &--cart {
-        left: 23px;
+        left: 22px;
+        top: 4px;
+      }
+      &--search {
+        left: 26px;
+        width: 32px;
       }
     }
   }
@@ -111,9 +123,31 @@
     justify-content: space-between;
     width: 342px;
 
+    .user-list__item {
+      &--search {
+        padding-top: 30px;
+        padding-bottom: 34px;
+        padding-right: 0px;
+        &:after {
+          position: absolute;
+          content: "";
+          top:0px ;
+          left:81px;
+          width: 1px;
+          height: 87px;
+          background-color: #ececec;
+        }
+      }
+    }
+
     .user-list__ico {
       &--cart {
         left: 33px;
+      }
+      &--search {
+        top:5px;
+        left: 30px;
+        width: 32px;
       }
     }
   }
