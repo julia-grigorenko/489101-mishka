@@ -36,7 +36,6 @@
   }
 
   .address__name {
-    // width: 180px;
     margin-bottom: 30px;
   }
 
@@ -56,6 +55,7 @@
   }
 
   .contacts__btn {
+    margin-top: 457px;
     &:hover {
       color: #ffffff;
       background-color: $font-grey;
@@ -66,6 +66,13 @@
     }
   }
 }
+
+@media (max-width: $desktop-width - 1) {
+  .contacts__btn-wrapper {
+    height: 587px;
+  }
+}
+
 @media (min-width:$tablet-width) {
   br {
     dispay: none;
@@ -131,6 +138,7 @@
     .contacts__btn {
       width: 230px;
       margin: 0 auto;
+      margin-top: 457px;
     }
   }
 }
@@ -210,6 +218,11 @@
       padding-top: 0px;
       padding-bottom: 106px;
       width: 302px;
+    }
+
+    .contacts__btn {
+      margin: 0 auto;
+
     }
   }
 }

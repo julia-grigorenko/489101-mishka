@@ -11,6 +11,7 @@
     background-image: url("../img/hero-mobile@1x.jpg");
     background-position: -128px -18px;
     background-repeat: no-repeat;
+    background-color: #f4f4f4;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-mobile@2x.jpg");
