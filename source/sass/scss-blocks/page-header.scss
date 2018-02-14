@@ -9,12 +9,18 @@
 
   .page-header__logo {
     @include wrapper-wdth-mrgn;
-    // width: 88px;
-    // height: 38px;
     display: block;
-    padding: 16px 30px;
-    // padding-left: 100px;
-    padding-left: 117px;
+    padding-left:26px;
+    padding-right:26px;
+    padding-top: 20px;
+    padding-bottom: 13px;
+    padding-left: 113px;
+    &:hover {
+      opacity: 0.6;
+    }
+    &:active {
+      opacity: 0.3;
+    }
     &:after {
       @media (max-width:$tablet-width - 1px) {
         position: absolute;
@@ -29,8 +35,8 @@
   }
 
   .page-header__logo-image {
-    width: 88px;
-    height: 38px;
+    width: 86px;
+    height: 35px;
   }
 }
 
@@ -47,17 +53,16 @@
 
     .page-header__logo {
       position: absolute;
-      left:50px;
-      top:20px;
+      left:-68px;
+      top: 1px;
       z-index: 2;
-      // width: 113px;
-      // height: 47px;
-      //background-color: black;
+      width: auto;
+
     }
 
     .page-header__logo-image {
-      width: 117px;
-      height: 47px;
+      width: 112px;
+      height: 46px;
     }
   }
 }
@@ -70,17 +75,18 @@
     }
 
     .page-header__logo {
+      padding: 0px;
+      margin: 0px;
       position: absolute;
-      margin: auto;
-      left: 0;
-      right: 0;
-      // height: 37 px;
-
+      left: 499px;
+      top: 7px;
+      width: 148px;
+      height: 73px;
     }
 
     .page-header__logo-image {
-      width: 155px;
-      height: 75px;
+      width: 148px;
+      height: 73px;
     }
   }
 }

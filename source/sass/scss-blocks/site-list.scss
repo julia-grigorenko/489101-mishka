@@ -46,7 +46,7 @@
     .site-list__item {
       display: flex;
       width: 168px;
-      padding-top:22px;
+      padding-top:18px;
       padding-bottom: 22px;
     }
 
@@ -59,21 +59,25 @@
 
 @media (min-width:$desktop-width) {
   .site-list {
-    width: 380px;
+    width: auto;
     order: 0;
 
     .site-list__item {
-      width:190px;
+      width:195px;
       padding-right: 0px;
       padding-left: 34px;
       &:first-child {
+        width:183px;
         padding-left: 0px;
         border-right: 1px solid #ececec;
       }
     }
 
     .site-list__link{
+      width: auto;
       font-size: 17px;
+      padding-top: 13px;
+      margin: 0px;
     }
   }
 }

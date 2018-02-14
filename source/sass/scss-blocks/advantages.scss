@@ -5,14 +5,14 @@
 
   .advantages__wrapper {
     @include wrapper-wdth-mrgn-pddng;
-    padding-bottom: 22px;
+    padding-bottom: 27px;
 
   }
 
   .advantages__title {
     @include font-family-title;
     padding-top: 26px;
-    padding-bottom: 36px;
+    padding-bottom: 31px;
     margin: 0px;
   }
 
@@ -28,9 +28,9 @@
     @include font-family-bold;
     color: $font-black;
     background-repeat: no-repeat;
-    background-position: 0px 0px;
+    background-position: 6px 0px;
     background-color: white;
-    margin-bottom: 35px;
+    margin-bottom: 31px;
 
     &--eco {
       background-image: url("../img/icon-feature-flower.svg");
@@ -60,7 +60,7 @@
     .advantages__wrapper {
       width: $tablet-width;
       padding: 0 50px;
-      margin-bottom: 23px;
+      margin-bottom: 15px;
 
     }
 
