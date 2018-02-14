@@ -21,6 +21,7 @@
     &:active {
       opacity: 0.3;
     }
+
     &:after {
       @media (max-width:$tablet-width - 1px) {
         position: absolute;
