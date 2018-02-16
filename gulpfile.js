@@ -1,9 +1,9 @@
 var gulp         = require('gulp'),
     sass         = require('gulp-sass'),
-    autoprefixer = require('autoprefixer'),
+    autoprefixer = require('gulp-autoprefixer'),
     plumber      = require('gulp-plumber'),
     postcss      = require('gulp-postcss'),
-    minify       = require('gulp-csso'),
+    minify       = require('gulp-cssnano'),
     rename       = require('gulp-rename'),
     imagemin     = require("imagemin"),
     webp         = require("cwebp"),
@@ -12,16 +12,13 @@ var gulp         = require('gulp'),
     include      = require("posthtml-include"),
     run          = require('run-sequence'),
     del          = require("del"),
-    minifyHtml   = require('gulp-htmlmin'),
     minifyJs   = require('gulp-uglify'),
     server = require("browser-sync").create();
 
 gulp.task("copy", function () {
  return gulp.src([
    "source/fonts/**/*.{woff,woff2}",
-   "source/img/**",
-   "source/css/**",
-   "source/min.js/**"
+   "source/img/**"
    ], {
      base: "source"
    })
@@ -35,20 +32,30 @@ gulp.task("copyJs", function () {
    .pipe(gulp.dest("build/js"));
 });
 
+gulp.task("copyCss", function () {
+  gulp.src('source/css/*.css')
+    .pipe(plumber())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest("build/css"))
+    .pipe(minify())
+    .pipe(gulp.dest("build/css"));
+});
+
 gulp.task("clean", function () {
  return del("build");
 });
 
 gulp.task('style-build', function(){
-   gulp.src('source/sass/style.sass')
+   return gulp.src('source/sass/style.scss')
     .pipe(plumber())
     .pipe(sass())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
+    .pipe(autoprefixer({
+            browsers: ['last 3 versions'],
+            cascade: true
+        }))
+    .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css'))
     .pipe(minify())
-    .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css'));
 });
 
@@ -66,8 +73,6 @@ gulp.task("html-build", function () {
    .pipe(posthtml([
      include()
    ]))
-   .pipe(minifyHtml())
-   .pipe(rename({suffix: '.min'}))
    .pipe(gulp.dest("build"));
  });
 
@@ -79,6 +84,7 @@ gulp.task("build", function(done) {
     "sprite-build",
     "html-build",
     "copyJs",
+    "copyCss",
     done
   );
 });
