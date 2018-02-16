@@ -13,6 +13,9 @@
     <script src="js/picturefill.min.js"></script>
   </head>
   <body>
+    <div class="visually-hidden">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo">
@@ -28,25 +31,25 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+              <a class="site-list__link" href="catalog.min.html">Каталог товаров</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Вязание на заказ</a>
+              <a class="site-list__link" href="form.min.html">Вязание на заказ</a>
             </li>
           </ul>
           <ul class="main-nav__list user-list">
             <li class="user-list__item user-list__item--search">
               <a class="user-list__link user-list__link--search" href="#" aria-label="Переход на страницу поиска по сайту интернет-магазина Мишка">
-                <svg class="user-list__ico user-list__ico--search" id="icon-search" role="img" width="18" height="18">
-                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                <svg class="user-list__ico user-list__ico--search" id="icon-search-to" role="img" width="18" height="18">
+                  <use xlink:href="#icon-search-to"></use>
                 </svg>
                 Поиск по сайту
               </a>
             </li>
             <li class="user-list__item">
               <a class="user-list__link" href="#" aria-label="Переход на страницу корзины на сайте интернет-магазина Мишка">
-                <svg class="user-list__ico user-list__ico--cart" id="icon-cart" role="img" width="20" height="19">
-                  <use xlink:href="img/sprite.svg#icon-cart"></use>
+                <svg class="user-list__ico user-list__ico--cart" id="icon-cart-to" role="img" width="20" height="19">
+                  <use xlink:href="#icon-cart-to"></use>
                 </svg>
                 Корзина: пока пуста
               </a>
@@ -80,8 +83,8 @@
           <li class="category-list__item category-list__item--light-green">
             <a href="#" class="category-list__link">
               <span class="category-list__text">Предметы интерьера</span>
-              <svg class="category-list__image category-list__image--light-green" id="category-list__image--light-green" aria-hidden="true" role="presentation" width="40" height="65">
-                <use xlink:href="img/sprite.svg#category-list__image--light-green"></use>
+              <svg class="category-list__image category-list__image--light-green" id="icon-interior-to" aria-hidden="true" role="presentation" width="40" height="65">
+                <use xlink:href="#icon-interior-to"></use>
               </svg>
 
             </a>
@@ -89,8 +92,8 @@
           <li class="category-list__item category-list__item--dark-green">
             <a href="#" class="category-list__link">
               <span class="category-list__text">Детские игрушки</span>
-              <svg class="category-list__image category-list__image--dark-green" id="category-list__image--dark-green" aria-hidden="true" role="presentation" width="60" height="60">
-                <use xlink:href="img/sprite.svg#category-list__image--dark-green"></use>
+              <svg class="category-list__image category-list__image--dark-green" id="icon-toy-to" aria-hidden="true" role="presentation" width="60" height="60">
+                <use xlink:href="#icon-toy-to"></use>
               </svg>
             </a>
           </li>
@@ -199,8 +202,8 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" aria-label="Переход на главную страницу сайта интернет-магазина Мишка">
-          <svg class="page-footer__logo-image" id="icon-footer-logo" role="img" width="102" height="34">
-            <use xlink:href="img/sprite.svg#icon-footer-logo"></use>
+          <svg class="page-footer__logo-image" id="icon-logofooter-to" role="img" width="102" height="34">
+            <use xlink:href="#icon-logofooter-to"></use>
           </svg>
         </a>
         <section class="social">
@@ -209,24 +212,24 @@
             <li class="social__item">
               <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Переход на страницу сайту интернет-магазина Мишка в социальной сети Инстаграм">
                 <span class="visually-hidden">Мы в Инстаграме</span>
-                  <svg class="social__ico social__ico--instagram" id="instagram" role="img" width="22" height="22">
-                    <use xlink:href="img/sprite.svg#instagram"></use>
+                  <svg class="social__ico social__ico--instagram" id="icon-insta-to" role="img" width="22" height="22">
+                    <use xlink:href="#icon-insta-to"></use>
                   </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Переход на страницу сайту интернет-магазина Мишка в социальной сети Фэйсбук">
                 <span class="visually-hidden">Мы в Фейсбуке</span>
-                <svg class="social__ico social__ico--facebook" id="facebook" role="img" width="15" height="28">
-                  <use xlink:href="img/sprite.svg#facebook"></use>
+                <svg class="social__ico social__ico--facebook" id="icon-fb-to" role="img" width="15" height="28">
+                  <use xlink:href="#icon-fb-to"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--twitter" href="#" aria-label="Переход на страницу сайту интернет-магазина Мишка в социальной сети Твиттер">
                 <span class="visually-hidden">Мы в Твиттере</span>
-                <svg class="social__ico social__ico--twitter" id="twitter" role="img" width="24" height="20">
-                  <use xlink:href="img/sprite.svg#twitter"></use>
+                <svg class="social__ico social__ico--twitter" id="icon-twitter-to" role="img" width="24" height="20">
+                  <use xlink:href="#icon-twitter-to"></use>
                 </svg>
               </a>
             </li>
@@ -238,8 +241,8 @@
           </a>
           <a class="copyright__link copyright__link--logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на страницу продвинутого интенсива htmlacademy.ru">
             <span class="visually-hidden">htmlacademy</span>
-            <svg class="copyright__img" id="htmlacademy-footer-logo" role="img" width="27" height="34">
-              <use xlink:href="img/sprite.svg#htmlacademy-footer-logo"></use>
+            <svg class="copyright__img" id="icon-logohtmlacademy-to" role="img" width="27" height="34">
+              <use xlink:href="#icon-logohtmlacademy-to"></use>
             </svg>
           </a>
         </section>

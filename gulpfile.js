@@ -12,81 +12,100 @@ var gulp         = require('gulp'),
     include      = require("posthtml-include"),
     run          = require('run-sequence'),
     del          = require("del"),
+    minifyHtml   = require('gulp-htmlmin'),
+    minifyJs   = require('gulp-uglify'),
     server = require("browser-sync").create();
 
+// gulp.task('style', function(){
+//    gulp.src('source/sass/**/*.sass')
+//     .pipe(plumber())
+//     .pipe(sass())
+//     .pipe(postcss([
+//       autoprefixer()
+//     ]))
+//     .pipe(gulp.dest('source/css'))
+//     .pipe(minify())
+//     .pipe(rename('style.min.css'))
+//     .pipe(gulp.dest('source/css'));
+// });
+//
+// gulp.task("sprite", function () {
+//   return gulp.src("source/img/icon-*.svg")
+//     .pipe(svgstore({
+//       inlineSvg: true
+//     }))
+//     .pipe(rename("_sprite.svg"))
+//     .pipe(gulp.dest("source/img"))
+// });
+//
+// gulp.task("html", function () {
+//  return gulp.src("source/*.html")
+//    .pipe(posthtml([
+//      include()
+//    ]))
+//    .pipe(gulp.dest("source"));
+//  });
 
-gulp.task('style', function(){
-   gulp.src('source/sass/**/*.sass')
-    .pipe(plumber())
-    .pipe(sass())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
-    .pipe(gulp.dest('source/css'))
-    .pipe(minify())
-    .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('source/css'));
-});
+ // gulp.task("htmlmin", function () {
+ //  return gulp.src("build/*.html")
+ //    .pipe(gulp-htmlmin())
+ //    .pipe(rename({suffix: '.min'}))
+ //    .pipe(gulp.dest("build"));
+ //  });
 
-gulp.task("sprite", function () {
-  return gulp.src("source/img/icon-*.svg")
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-    .pipe(rename("_sprite.svg"))
-    .pipe(gulp.dest("source/img"))
-});
+// gulp.task("images", function () {
+//   return gulp.src("source/img/**/*.{png,jpg,svg}")
+//   .pipe(imagemin([
+//     imagemin.optipng({optimizationLevel: 3}),
+//     imagemin.jpegtran({progressive: true}),
+//     imagemin.svgo()
+//   ]))
+//   .pipe(gulp.dest("source/img"));
+// });
+//
+// gulp.task("webp", function () {
+//  return gulp.src("source/img/**/*.{png,jpg}")
+//      .pipe(webp({quality: 90}))
+//      .pipe(gulp.dest("source/img"));
+// });
+//
+// gulp.task("serve", ["style"], function() {
+//   server.init({
+//     server: "source/",
+//     notify: false,
+//     open: true,
+//     cors: true,
+//     ui: false
+//   });
+//
+//   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
+//   gulp.watch("source/*.html").on("change", server.reload);
+// });
 
-gulp.task("html", function () {
- return gulp.src("source/*.html")
-   .pipe(posthtml([
-     include()
-   ]))
-   .pipe(gulp.dest("source"));
- });
-
-gulp.task("images", function () {
-  return gulp.src("source/img/**/*.{png,jpg,svg}")
-  .pipe(imagemin([
-    imagemin.optipng({optimizationLevel: 3}),
-    imagemin.jpegtran({progressive: true}),
-    imagemin.svgo()
-  ]))
-  .pipe(gulp.dest("source/img"));
-});
-
-gulp.task("webp", function () {
- return gulp.src("source/img/**/*.{png,jpg}")
-     .pipe(webp({quality: 90}))
-     .pipe(gulp.dest("source/img"));
-});
-
-gulp.task("serve", ["style"], function() {
-  server.init({
-    server: "source/",
-    notify: false,
-    open: true,
-    cors: true,
-    ui: false
-  });
-
-  gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("source/*.html").on("change", server.reload);
-});
-
-
+// gulp.task("htmlmin", function () {
+//  return gulp.src("build/*.html")
+//    .pipe(minifyHtml())
+//    .pipe(rename({suffix: '.min'}))
+//    .pipe(gulp.dest("build"));
+//  });
 
 gulp.task("copy", function () {
  return gulp.src([
    "source/fonts/**/*.{woff,woff2}",
    "source/img/**",
-   "source/js/**",
    "source/css/**",
-   "source/*.html"
+   "source/min.js/**"
    ], {
      base: "source"
    })
    .pipe(gulp.dest("build"));
+});
+
+gulp.task("copyJs", function () {
+ return gulp.src("source/js/*.js")
+   .pipe(minifyJs())
+   .pipe(rename({suffix: '.min'}))
+   .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("clean", function () {
@@ -120,6 +139,8 @@ gulp.task("html-build", function () {
    .pipe(posthtml([
      include()
    ]))
+   .pipe(minifyHtml())
+   .pipe(rename({suffix: '.min'}))
    .pipe(gulp.dest("build"));
  });
 
@@ -130,6 +151,7 @@ gulp.task("build", function(done) {
     "style-build",
     "sprite-build",
     "html-build",
+    "copyJs",
     done
   );
 });
