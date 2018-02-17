@@ -183,9 +183,13 @@
           <h2 class="visually-hidden">Видео, посвященное процессу производства товаров интернет-магазина Мишка</h2>
           <div class="video__inner-wrapper">
             <p class="video__title">Процесс производства</p>
-            <video class="video__video">
-              <source class="video__source" src="#" type=''>
-            </video>
+            <div class="video__video-wrapper">
+              <div class="smth">
+                <video class="video__video">
+                  <source class="video__source" src="#" type=''>
+                </video>
+              </div>
+            </div>
             <p class="video__text">
                 По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
             </p>
@@ -245,7 +249,8 @@
       </div>
     </footer>
     <div class="modal-overlay modal-close">
-      <div class="modal">
+    </div>
+      <div class="modal modal-close">
         <div class="modal__wrapper">
           <h2 class="modal__title">Добавить в корзину</h2>
           <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
@@ -270,7 +275,7 @@
           </form>
         </div>
       </div>
-    </div>
+
     <script src="js/common.min.js"></script>
   </body>
 </html>

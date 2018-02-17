@@ -59,6 +59,20 @@ gulp.task('style-build', function(){
     .pipe(gulp.dest('build/css'));
 });
 
+gulp.task('style', function(){
+   return gulp.src('source/sass/style.scss')
+    .pipe(plumber())
+    .pipe(sass())
+    .pipe(autoprefixer({
+            browsers: ['last 3 versions'],
+            cascade: true
+        }))
+    .pipe(rename('style.min.css'))
+    .pipe(gulp.dest('source/css'))
+    .pipe(minify())
+    .pipe(gulp.dest('source/css'));
+});
+
 gulp.task("sprite-build", function () {
   return gulp.src("source/img/icon-*.svg")
     .pipe(svgstore({
