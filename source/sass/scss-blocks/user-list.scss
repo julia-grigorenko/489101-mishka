@@ -121,7 +121,7 @@
 @media (min-width:$desktop-width) {
   .user-list {
     justify-content: space-between;
-    width: 342px;
+    width: 345px;
 
     .user-list__item {
       &--search {
@@ -146,7 +146,7 @@
       }
       &--search {
         top:5px;
-        left: 30px;
+        left: 27px;
         width: 32px;
       }
     }

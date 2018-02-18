@@ -24,9 +24,13 @@
     padding-top: 30px;
   }
 
+  .catalog__item-content {
+    border: 1px solid #ededed;
+  }
+
   .catalog__inner-wrapper {
     margin-top: 9px;
-    border-bottom: 1px solid #ededed;
+
     &:hover {
       box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
     }
@@ -43,6 +47,9 @@
 
   .catalog__description-name {
     margin: 0px;
+    padding-top: 9px;
+    font-size: 17px;
+    line-height: 24px;
   }
 
   .catalog__description-link {
@@ -78,7 +85,7 @@
 
   .catalog__price {
     display: block;
-    padding-top: 23px;
+    padding-top: 21px;
     padding-bottom: 27px;
     font-size: 15px;
     line-height: 24px;
@@ -89,7 +96,7 @@
   .catalog__btn {
     font-size: 0px;
     display: block;
-    padding-top: 25px;
+    padding-top: 22px;
     padding-bottom: 14px;
   }
 
@@ -125,8 +132,8 @@
     }
 
     .catalog__title {
-      padding-top: 87px;
-      padding-bottom: 87px;
+      padding-top: 94px;
+      padding-bottom: 80px;
       width: $tablet-width;
       font-size: 43px;
       line-height: 50px;
@@ -154,7 +161,7 @@
     .catalog__img {
       display: block;
       width: 337px;
-      height: 337px;
+      height: 332px;
     }
 
     .catalog__inner-wrapper {
@@ -170,7 +177,7 @@
     }
 
     .catalog__description-link {
-      padding-top: 25px;
+      padding-top: 16px;
       font-size: 20px;
     }
 
@@ -184,6 +191,7 @@
 
     .catalog__price {
       padding-bottom: 17px;
+      padding-top: 19px;
       font-size: 17px;
       line-height: 31px;
     }
@@ -212,14 +220,24 @@
     }
 
     .catalog__title {
-      padding-top: 97px;
-      padding-bottom: 102px;
+      padding-top: 93px;
+      padding-bottom: 103px;
       font-size: 53px;
       line-height: 57px;
     }
 
+    .catalog__item-description {
+      border-bottom:none;
+      margin-left: 25px;
+    }
+
+    .catalog__description-link {
+      padding-top: 20px;
+      font-size: 20px;
+    }
+
     .catalog__item {
-      width: 319px;
+      width: 313px;
     }
 
     .catalog__item-content {
@@ -227,13 +245,13 @@
     }
 
     .catalog__item-link {
-      width: 319px;
-      height: 463px;
+      width: 311px;
+      height: 457px;
     }
 
     .catalog__img {
-      width: 319px;
-      height: 463px;
+      width: 3119px;
+      height: 457px;
     }
 
     .catalog__inner-wrapper {
@@ -247,7 +265,13 @@
       min-height: 124px;
     }
 
+    .catalog__footer {
+      margin-left: 22px;
+    }
+
+
     .catalog__item-params {
+      padding-bottom: 0px;
       font-size: 15px;
     }
 
